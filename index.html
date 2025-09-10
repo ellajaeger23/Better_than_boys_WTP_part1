@@ -3,58 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page of the website">
-    <meta name="keywords" content="game development, coding, jobs, join team">
+    <meta name="description" content="Better Than Boys Studio - Indie Game Development">
+    <meta name="keywords" content="game development, indie studio, join team, projects">
     <meta name="author" content="Mino">
-    <title>Home Page</title>
-    <link href="Styles\index-styles.css" rel="stylesheet">
+    <title>Better Than Boys Studio</title>
+    <link href="styles/style.css" rel="stylesheet">
 </head>
 
 <body class="index">
-    <nav> 
-        <img src="logo.png" alt="Pixel Panic Studios Logo">
+    <div class="top-section">
+    <!-- Navigation -->
+    <nav>
+        <img src="styles/Photo/logo.png" alt="Better Than Boys Studio Logo" class="logo">
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="jobs.html">Projects</a></li>
-            <li><a href="apply.html">Join Us</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="apply.html">Join us</a></li>
         </ul>
     </nav>
-    <h1>Better Than Boys Studios</h1>
-    <p><em>Where deadlines are made up and the bugs don’t matter.</em></p>
-    
-    <main>
-       <section>
-            <h2>Welcome to Better Than Boys Studios</h2>
-            <p>We’re a small team of dreamers, coders, and professional procrastinators trying to ship our next game before our laptops catch fire.</p>
-        </section>
 
-        <!-- Team Status -->
-        <section>
-            <h3>Current Status of the Team</h3>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>BETTER THAN BOYS</h1>
+        <p class="tagline">WHERE DEADLINES ARE MADE UP AND THE BUGS DON’T MATTER.</p>
+        <p class="intro">
+            Welcome to the beautiful disaster we call game development. 
+            We’re not a giant corporate studio with unlimited funding or a secret AI army. 
+            Just a small group of caffeine-fueled dreamers trying to turn chaotic ideas into 
+            games people will (hopefully) love.
+        </p>
+    </header>
+</div>
+    <!-- Decorative Image -->
+    <div class="mascot">
+        <img src="styles/Photo/mascot.png" alt="Pixel mascot character">
+    </div>
+
+    <!-- Why Work With Us Section -->
+    <section class="why-work">
+        <h2>Why work with us?</h2>
+        
+        <div class="note-card">
             <ul>
-                <li>1 artist crying over particle effects</li>
-                <li>1 designer rewriting the UI for the 7th time</li>
-                <li>1 producer pretending to “manage” us</li>
-                <li>0 coders… yet</li>
+                <li>Fixed a bug only to create three more,</li>
+                <li>Argued with a compiler at 3 a.m.,</li>
+                <li>Said “I’ll clean up this code later” (and lied),</li>
+                <li>Or secretly enjoyed the chaos of game jams—</li>
             </ul>
-        </section>
+            <p class="fit">...then you’ll fit right in.</p>
+        </div>
 
-        <!-- Call to Action -->
-        <section>
-            <h3>Think You Can Survive the Chaos?</h3>
-            <p>If you can handle caffeine overdoses, feature creep, and occasional existential dread, we might have a spot for you.</p>
-            <p><a href="apply.html">Join the Madness →</a></p>
-        </section>
+        <div class="mission">
+            <p>
+                We’re building games not just to release projects, but to make worlds 
+                that are quirky, fun, and maybe a little unhinged, just like us.
+            </p>
+        </div>
 
-        <!-- Game Concept / Contact -->
-        <section>
-            <img src="game-concept.jpg" alt="Game Concept Art">
-            <p>Or just email us directly: <a href="mailto:BetterThanBoys@gmail.com">BetterThanBoys@gmail.com</a></p>
-        </section>
-    </main>
+        <!-- Decorative characters/images -->
+        <div class="decorations">
+            <img src="styles/Photo/cat.png" alt="Pixel cat mascot" class="cat">
+            <img src="styles/Photo/doodle1.png" alt="Doodle decoration" class="doodle-left">
+            <img src="styles/Photo/doodle2.png" alt="Doodle decoration" class="doodle-right">
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 BTB Studios. All rights reserved.</p>
+        <p>&copy; 2025 Better Than Boys Studio. All rights reserved.</p>
+        <p>
+            <a href="https://github.com/ellajaeger23/Better_than_boys_WTP_part1.git" target="_blank">GitHub Repository</a> | 
+            <a href="https://ellajaeger23.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiZTkyMDY5ZTAxMGNlNGMwNWFmMmEzOGYxNzg3YTk4Y2MiLCJwIjoiaiJ9" target="_blank">Jira Board</a> | 
+            <a href="mailto:phuonguyen.brv@gmail.com">betterthanboys@gmail.com</a>
+        </p>
     </footer>
 </body>
 </html>

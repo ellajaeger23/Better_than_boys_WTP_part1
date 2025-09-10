@@ -1,0 +1,240 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ---------- Why Work With Us Section ---------- */
+body.index {
+    font-family: "Courier New", monospace;
+    background: black;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Halftone background image */
+.top-section {
+    background-image: url("Photo/background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+nav img.logo {
+    max-width: 280px;
+    height: auto;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav .menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-family: "Press Start 2P", monospace; /* retro arcade font */
+    letter-spacing: 2px;
+}
+
+.hero .tagline {
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.hero .intro {
+    max-width: 700px;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Mascot image bottom-right */
+.mascot {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.mascot img {
+    max-width: 200px;
+    height: auto;
+    animation: floaty 3s ease-in-out infinite;
+}
+
+/* Floaty animation */
+@keyframes floaty {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* height of the bounce */
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+    color: #ccc;
+}
+
+/* Global link styling */
+a {
+    color: white;               /* white text for all links */
+    text-decoration: none;      /* remove underline */
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #ff99cc;             /* soft pink highlight on hover */
+    text-decoration: underline; /* retro underline effect */
+}
+
+/* ---------- Why Work With Us Section ---------- */
+.why-work {
+    position: relative;
+    padding: 4rem 2rem;
+    background: #000; /* keep consistent with your theme */
+    color: #fff;
+    text-align: center;
+    font-family: "Courier New", monospace;
+}
+
+.why-work h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-family: "Georgia", serif;
+}
+
+/* Note card (lined paper effect) */
+.note-card {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: left;
+    line-height: 1.6;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        #fff,
+        #fff 28px,
+        #cfd6e0 29px
+    ); /* lined paper effect */
+    border-left: 4px solid #ff5fa2;
+}
+
+.note-card ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.note-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Fit-right-in text */
+.note-card .fit {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #ff5fa2;
+}
+
+/* Mission statement (taped note) */
+.mission {
+    display: inline-block;
+    background: #fdfdfd;
+    color: #000;
+    padding: 1.5rem;
+    border-radius: 6px;
+    max-width: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    position: relative;
+    font-family: "Courier New", monospace;
+}
+
+/* Fake tape effect */
+.mission::before,
+.mission::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    background: #ff8ab8;
+    opacity: 0.85;
+    top: -10px;
+    transform: rotate(-5deg);
+}
+
+.mission::after {
+    right: 20%;
+    transform: rotate(5deg);
+}
+
+.mission::before {
+    left: 20%;
+}
+
+/* Decorations (cat + doodles) */
+.decorations {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.decorations img {
+    position: absolute;
+    max-width: 150px;
+}
+
+.decorations .cat {
+   max-width: 200px;
+    right: 2%;
+    bottom: -60px;
+}
+
+.decorations .doodle-left {
+    left: 5%;
+    top: -30px;
+    transform: rotate(-10deg);
+}
+
+.decorations .doodle-right {
+    right: 13%;
+    top: -100px;
+    transform: rotate(-15deg);
+    max-width: 120px;
+}
