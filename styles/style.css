@@ -4,16 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* ---------- Why Work With Us Section ---------- */
+/* ---------- Index Section ---------- */
 body.index {
     font-family: "Courier New", monospace;
     background: black;
     color: white;
     text-align: center;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
 }
 
 /* Halftone background image */
@@ -33,7 +32,7 @@ nav {
 
 nav img.logo {
     max-width: 280px;
-    height: auto;
+    height: auto; /*prevent logo from getting squished */
 }
 
 nav .menu {
@@ -59,7 +58,7 @@ nav .menu li a:hover {
 
 .hero h1 {
     font-size: 3rem;
-    font-family: "Press Start 2P", monospace; /* retro arcade font */
+    font-family: "Press Start 2P", monospace; 
     letter-spacing: 2px;
 }
 
@@ -121,9 +120,9 @@ a:hover {
 
 /* ---------- Why Work With Us Section ---------- */
 .why-work {
-    position: relative;
+    position: relative; /* keep section in normal flow AND act as reference for absolutely positioned children (decorations like .cat, .doodle-left, .doodle-right) */
     padding: 4rem 2rem;
-    background: #000; /* keep consistent with your theme */
+    background: #000; 
     color: #fff;
     text-align: center;
     font-family: "Courier New", monospace;
@@ -135,23 +134,21 @@ a:hover {
     font-family: "Georgia", serif;
 }
 
-/* Note card (lined paper effect) */
+/* Note card (lined paper effect) (Help of AI to assist with the measurement */
 .note-card {
     display: inline-block;
     background: #fff;
     color: #000;
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 8px; /* Rounded corners */
     text-align: left;
     line-height: 1.6;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    position: relative;
     max-width: 600px;
     margin: 0 auto 2rem;
-    background-image: repeating-linear-gradient(
+    background-image: repeating-linear-gradient( /* Creat repeating gradient */
         to bottom,
-        #fff,
-        #fff 28px,
+        #fff, 
+        #fff 28px, /* White block the grey line then repeats */
         #cfd6e0 29px
     ); /* lined paper effect */
     border-left: 4px solid #ff5fa2;
@@ -182,7 +179,6 @@ a:hover {
     border-radius: 6px;
     max-width: 500px;
     margin: 2rem auto;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
     position: relative;
     font-family: "Courier New", monospace;
 }
