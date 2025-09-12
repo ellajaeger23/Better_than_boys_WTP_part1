@@ -234,3 +234,171 @@ a:hover {
     transform: rotate(-15deg);
     max-width: 120px;
 }
+
+
+
+
+
+/*ABOUT PAGE :)*/
+
+  
+/* RESET*/
+* { margin: 0; /* remove default outer space */
+    padding: 0; /* remove default inner space */
+ }
+
+
+/* PAGE BASICS*/
+#about-page { 
+  background: #000000;  /* black background */
+  color: #ffffff; /* white text */
+  line-height: 1.6; /* a little extra line spacing */
+  padding: 20px; /* space around the whole page */
+  font-family: "Courier New", monospace;
+}
+
+header {
+    background-image: url("Photo/nav.png"); 
+    background-size: cover; /* image covers the whole header */
+    background-position: center; /* image centered */
+  }
+  
+
+/*NAV BAR */
+nav {
+    display: flex; /*put logo and nav on one line */
+    justify-content: space-between; /* space between logo and menu */
+    align-items: center;   /* center both */
+    padding: 1rem 3rem;  /* same spacing as index pagae */
+  }
+  
+  nav img.logo {
+    max-width: 280px; /* logo size same as index page */
+    height: auto;  /* prevent squishing */
+  }
+  
+  nav .menu {
+    list-style: none;   /* remove bullets */
+    display: flex;  /* nav in a row */
+    gap: 2rem; /* spacing between links */
+  }
+  
+  nav .menu li a {
+    color: white;  /* white links */
+    text-decoration: none; /* no underline on links*/
+    font-size: 1.2rem;   /* matches index font sizing */
+  }
+  
+  nav .menu li a:hover {
+    text-decoration: underline;  /* underlines on hover */
+  }
+
+
+/* MAIN */
+#about-main { 
+  max-width: 900px; /* limit line length  */
+  margin: 0 auto;  /* center the main content */
+}
+
+/* SECTION CARDS*/
+#about-main section {
+  background: #111016;       
+  border: 1px solid #2a2330; /* adds border */
+  border-radius: 12px;  /* round corners */
+  padding: 16px;    /* space inside the card */
+  margin: 16px 0;   /* space between cards */
+  transition: box-shadow 0.3s, border-color 0.3s; /* hover glow */
+}
+
+#about-main section:hover {
+  box-shadow: 0 0 18px #ff7ac6;  /* pink glow when hovering */
+  border-color: #ff7ac6;  /* border becomes pink on hover */
+}
+
+/* SECTION TITLES */
+#about-main h2 {
+  color: #ff7ac6;    /* pink heading color */
+  font-size: clamp(1rem, 2.6vw, 1.4rem); /* responsive size for all screens */
+  margin-bottom: 10px;   /* space under the title */
+}
+
+/* PARAGRAPHS */
+#about-main p {
+  margin: 8px 0; /* spacing around paragraphs */
+}
+
+/* ABOUT LISTS */
+#about-section ul {
+  margin: 8px 0;  /* space above/below the list */
+  padding-left: 18px;   /* indent bullets */
+}
+
+#about-section ul ul {
+  margin-top: 6px;    /* a bit of space before nested list */
+  padding-left: 16px;   /* indent bullets more */
+}
+
+/* CONTRIBUTIONS*/
+#contributions-section dt {
+  color: #ff9ad6;  /* make names pink */
+  font-weight: bold;  /* bold the names */
+}
+
+#contributions-section dd {
+  margin-left: 18px;   /* indent the roles under names */
+  margin-bottom: 6px;  /* space after each role */
+}
+
+/*GROUP PHOTO */
+#group-photo-section figure {
+  text-align: center;   /* center image and caption */
+}
+
+#group-photo-section img {
+  max-width: 100%;   /* keep image inside the container */
+  height: auto;     /* keep proportions */
+  border-radius: 10px;    /* soft corners */
+  border: 2px solid #2a2330;  /* thin frame around image */
+}
+
+#group-photo-section figcaption {
+  color: #ffbde6;    /* pink caption */
+  margin-top: 6px;     /* space above the caption text */
+  font-size: 0.95rem;    
+}
+
+/*INTERESTS TABLE*/
+#interests-section table {
+  width: 100%;   /* table spans the section width */
+  border-collapse: collapse;    /* merges borders for a clean look */
+  margin-top: 6px;    /* space above table */
+}
+
+#interests-section th,
+#interests-section td {
+  border: 1px solid #2a2330;  /* thin border between cells */
+  padding: 8px;    /*room in cells*/
+  text-align: left;   /*text aligned left */
+}
+
+#interests-section th {
+  background: #1a1620; /* darker row for headers */
+  color: #ff9ad6;   /* pink header text */
+}
+
+/* FOOTER*/
+#about-footer {
+  text-align: center;   /* center footer text */
+  margin-top: 20px;   /* space above footer */
+  color: #cfc3d6;    
+  font-size: 0.9rem;             
+}
+
+/*title fonts*/
+
+h1, h2, h3 {
+    font-family: "Orbitron", sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+  }
+  
