@@ -6,17 +6,35 @@
     <meta name="keywords" content="work, jobs, team, careers">
     <title>Jobs Available</title>
 
-    <link rel="stylesheet" href="styles/stylesjobs.css">
+    <link rel="stylesheet" href="/Users/allie/school/webdev/GroupProject/Better_than_boys_WTP_part1/styles/stylesjobs.css">
 </head>
 
-<header><h1>Apply here!</h1>
-    <nav>
-        <a href="">home</a>
-        <a href="">jobs</a>
-        <a href="">about us</a>
-    </nav>
+<header>
+  <h1>Looking for work and pay?</h1>
 </header>
-  
+
+<aside>
+    <nav>
+        <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="jobs.html">Jobs</a>
+            </li>
+            <li>
+              <a href="apply.html">Apply</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="mailto:"></a>"
+            </li>
+        </ul>
+    </nav>
+</aside>
+
 <body>
 <p>
   <h2 id="apply">apply</h2>
@@ -30,6 +48,7 @@
   <br> We look forward to reviewing your application and potentially welcoming you to our dynamic team
 </p>
 
+<section class="applicationform">
 <tr>
   <th colspan="4" scope="row"> Note: All positions are subject to availability and may require specific qualifications or experience. </th>
   <td>
@@ -46,24 +65,25 @@
     </form>
   </td>
   <td>
-    Provide Resume/CV below
+    Provide Resume below
     </form>
     <form action="/upload_resume" method="post" enctype="multipart/form-data">
       <label for="resume">Upload:</label><br>
       <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br>
-      <input type="submit" value="/upload_resume">
+      <input type="submit" value="upload resume">
     </form>
   </td>
 </tr>
+</section>
 
-      <h2 id="jobs">positions</h2>
+<section clas="paytable">
       <table>
          <caption>Table of available jobs</caption>
          <thead>
             <tr>
             <!-- the scope attribute assists non-visual user agents -->
             <!-- rowspan and colspan allow multiple cells to be merged -->
-              <th rowspan="2" scope="col">Month</th>
+              <th rowspan="2" scope="col">positions</th>
               <th colspan="3" scope="col">Pay</th>
             </tr>
             <tr>
@@ -74,49 +94,52 @@
         </thead>
         <tbody>
          <tr>
-           <th class='month' scope="row">Junior Technician</th>
+           <th class='jobslist' scope="row">Junior Technician</th>
            <td>$60</td>
            <td>$40</td>
            <td>$100</td>
          </tr>
         <tbody>
          <tr>
-           <th class='month' scope="row">Senior Technician</th>
+           <th class='jobslist' scope="row">Senior Technician</th>
            <td>$60</td>
            <td>$40</td>
            <td>$100</td>
          </tr>
         <tbody>
          <tr>
-           <th class='month' scope="row">Consultant</th>
+           <th class='jobslist' scope="row">Consultant</th>
            <td>$60</td>
            <td>$40</td>
            <td>$100</td>
          </tr>
          <tr>
-           <th class='month' scope="row">Web Developer</th>
+           <th class='jobslist' scope="row">Web Developer</th>
            <td>$40</td>
            <td>$40</td>
            <td>$80</td>
          </tr>
-        </tbody>
-        <tfoot>
          <tr>
-            <th colspan="1" scope="row"> Total</th>
+            <th class="jobslist" scope="row"> Writer</th>
             <td>$180</td>
             <td>$500</td>
             <td>$500</td>
          </tr>
-        </tfoot>
+        </tbody>
 		</table>
 </body>
+</section>
 
         <!--                -->
+<section class="joblistings">
+  <p>Below are the current job openings at BTB Studios. Click on "Click to apply" next to each job title to start your application process.</p>
 
-<aside>
-<table>
+  <details>
+  <summary>Web Developer: 50K - 80K</summary>
+
+<table class="table1">
   <tr> <!-- defines table -->
-    <th class="apply" colspan="1" scope="col"><a href="">Click to apply</th></a>
+    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
     <th class="title" colspan="5" scope="col">Web Developer</th>
   </tr>
   <tr>
@@ -160,9 +183,14 @@
   </tfoot>
 </table>
 
-<table>
+</details>
+
+<details>
+<summary>Junior Technician: 30K - 50K</summary>
+
+<table class="table2">
   <tr> <!-- defines table -->
-    <th class="apply" colspan="1" scope="col"><a href="">Click to apply</th></a>
+    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
     <th class="title" colspan="5" scope="col">Junior Technician </th>
   </tr>
   <tr>
@@ -206,9 +234,14 @@
   </tfoot>
 </table>
 
-<table>
+</details>
+
+<details>
+<summary>Senior Technician: 70K - 100K</summary>
+
+<table class="table3">
   <tr> <!-- defines table -->
-    <th class="apply" colspan="1" scope="col"><a href="">Click to apply</th></a>
+    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
     <th class="title" colspan="5" scope="col">Senior Technician </th>
   </tr>
   <tr>
@@ -252,9 +285,14 @@
   </tfoot>
 </table>
 
-<table>
+</details>
+
+<details>
+<summary>Consultant: 70K - 120K</summary>
+
+<table class="table4">
   <tr> <!-- defines table -->
-    <th class="apply" colspan="1" scope="col"><a href="">Click to apply</th></a>
+    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
     <th class="title" colspan="5" scope="col">Consultant </th>
   </tr>
   <tr>
@@ -297,3 +335,56 @@
     </tr>
   </tfoot>
 </table>
+
+</details>
+
+<details>
+<summary>Writer: 40K - 70K</summary>
+
+<table class="table5">
+  <tr> <!-- defines table -->
+    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
+    <th class="title" colspan="5" scope="col">Writer </th>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
+    <td>3+ years experience</td>
+    <td>Excellent writing and editing skills</td>
+    <td>Ability to research and understand complex topics</td>
+    <td>Strong attention to detail</td>
+    <td>Good communication skills</td>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" rowspan="2" scope="row"> Responsibilities </th>
+    <td>Write and edit technical articles, blog posts, and documentation</td>
+    <td>Conduct research on industry trends and best practices</td>
+    <td>Collaborate with subject matter experts to ensure accuracy</td>
+    <td>Maintain a consistent tone and style across all content</td>
+    <td>Meet deadlines and manage multiple projects simultaneously</td>
+  </tr>
+  <tr>
+    <td>Work closely with the marketing team to develop content strategies</td>
+    <td>Ensure all content is optimized for SEO</td>
+    <td>Contribute to team knowledge sharing</td>
+    <td>Stay updated with the latest industry trends and advancements</td>
+    <td>Participate in brainstorming sessions for new content ideas</td>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" colspan="1" scope="row"> Benefits </th>
+    <td>Competitive salary</td>
+    <td>Flexible working hours</td>
+    <td>Opportunities for professional development</td>
+    <td>Collaborative and supportive team environment</td>
+    <td>Access to the latest tools and technologies</td>
+  </tr>
+  <tfoot>
+    <tr>
+      <th colspan="6" scope="col"> Description </th>
+    </tr>
+    <tr>
+      <td colspan="6"> We are seeking a talented and motivated part-time writer to join our content team. The
+</table>
+
+</details>
+
+</section>
