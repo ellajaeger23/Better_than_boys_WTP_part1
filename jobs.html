@@ -2,25 +2,60 @@
 <html lang="en"></html>
 <head>
     <meta charset="UTF-8">
-    <meta name="Author" content="Allison Heath">
+    <meta name="Author" content="Allison Heath, Ella Jaeger, Minoo Ghasemi">
     <meta name="keywords" content="work, jobs, team, careers">
     <title>Jobs Available</title>
 
-    <link rel="stylesheet" href="file:///Users/allie/school/webdev/GroupProject/styles/styling.css">
+    <link rel="stylesheet" href="/Users/allie/school/webdev/GroupProject/Better_than_boys_WTP_part1/styles/stylesjobs.css">
 </head>
 
 <header><h1>Apply here!</h1>
-  <nav> 
-    <img src="logo.png" alt="Pixel Panic Studios Logo">
-    <ul class="menu">
-        <li><a href="index.html">Home🏠</a></li>
-        <li><a href="about.html">About Us👩‍💻</a></li>
-        <li><a href="jobs.html">Jobs💻</a></li>
-        <li><a href="apply.html">Apply💁‍♀️</a></li>
-    </ul>
-</nav>
+    <nav>
+        <a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">home</a>
+        <a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">jobs</a>
+        <a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">about us</a>
+    </nav>
 </header>
-    
+  
+<body>
+<p>
+  <h2 id="apply">apply</h2>
+  Welcome to the application page, we're excited that you're interested in joining our team! 
+  <br> At BTB Studios we value talent, dedication, and a passion for technology. 
+  To apply for a position, please click the "Click to apply" link next to the job description in the listings below to head to our application page.
+</p>
+
+<p>
+  Please write or provide a brief cover letter explaining why you would be a great fit for our team, along with your resume or CV.
+  <br> We look forward to reviewing your application and potentially welcoming you to our dynamic team
+</p>
+
+<tr>
+  <th colspan="4" scope="row"> Note: All positions are subject to availability and may require specific qualifications or experience. </th>
+  <td>
+    Provide cover letter below
+    <form action="/submit_cover_letter" method="post">
+      <label for="cover_letter">Cover Letter:</label><br>
+      <textarea id="cover_letter" name="cover_letter" rows="10" cols="50" placeholder="Write your cover letter here..."></textarea><br>
+      <input type="submit" value="Submit Application">
+    </form>
+    <form action="/upload_cover_letter" method="post" enctype="multipart/form-data">
+      <label for="cover_letter">Or, Upload Directly:</label><br>
+      <input type="file" id="cover_letter" name="cover_letter" accept=".pdf,.doc,.docx"><br>
+      <input type="submit" value="Upload Cover Letter">
+    </form>
+  </td>
+  <td>
+    Provide Resume/CV below
+    </form>
+    <form action="/upload_resume" method="post" enctype="multipart/form-data">
+      <label for="resume">Upload:</label><br>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br>
+      <input type="submit" value="/upload_resume">
+    </form>
+  </td>
+</tr>
+
       <h2 id="jobs">positions</h2>
       <table>
          <caption>Table of available jobs</caption>
@@ -44,6 +79,20 @@
            <td>$40</td>
            <td>$100</td>
          </tr>
+        <tbody>
+         <tr>
+           <th class='month' scope="row">Senior Technician</th>
+           <td>$60</td>
+           <td>$40</td>
+           <td>$100</td>
+         </tr>
+        <tbody>
+         <tr>
+           <th class='month' scope="row">Consultant</th>
+           <td>$60</td>
+           <td>$40</td>
+           <td>$100</td>
+         </tr>
          <tr>
            <th class='month' scope="row">Web Developer</th>
            <td>$40</td>
@@ -60,69 +109,191 @@
          </tr>
         </tfoot>
 		</table>
+</body>
 
         <!--                -->
 
+<aside>
+<table>
+  <tr> <!-- defines table -->
+    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
+    <th class="title" colspan="5" scope="col">Web Developer</th>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
+    <td>3+ years experience</td>
+    <td>Proficiency in HTML, CSS, JavaScript</td>
+    <td>Experience with responsive design</td>
+    <td>Strong problem-solving skills</td>
+    <td>Excellent communication skills</td>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" rowspan="2" scope="row"> Responsibilities </th>
+    <td>Develop and maintain websites</td>
+    <td>Collaborate with designers and content creators</td>
+    <td>Optimize website performance</td>
+    <td>Troubleshoot and resolve issues</td>
+    <td>Stay updated with web development trends</td>
+  </tr>
+  <tr>
+    <td>Work on multiple projects simultaneously</td>
+    <td>Ensure cross-browser compatibility</td>
+    <td>Implement SEO best practices</td>
+    <td>Participate in code reviews</td>
+    <td>Contribute to team knowledge sharing</td>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" colspan="1" scope="row"> Benefits </th>
+    <td>Competitive salary</td>
+    <td>Flexible working hours</td>
+    <td>Opportunities for professional development</td>
+    <td>Collaborative and supportive team environment</td>
+    <td>Access to the latest tools and technologies</td>
+  </tr>
+  <tfoot>
+    <tr>
+      <th colspan="6" scope="col"> Description </th>
+    </tr>
+    <tr>
+      <td colspan="6"> We are seeking a skilled and motivated part-time web developer to join our dynamic team. The ideal candidate will have a strong background in web development, with a passion for creating engaging and user-friendly websites. If you are a proactive individual who thrives in a fast-paced environment, we would love to hear from you!</td>
+    </tr>
+  </tfoot>
+</table>
 
-      <table>
-         <caption>Casual / Part Time Technician</caption>
-         <thead>
-            <tr>
-              <th rowspan="3" scope="col">Hours / Pay</th>
-              <th colspan="3" scope="col">Pay Range</th>
-              <th colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
-            </tr>
-            <tr>
-              <th scope="col">Low</th>
-              <th scope="col">Med.</th>
-              <th scope="col">High</th>
-              <td scope="col">description: Beginner web developer <br> for short term project</td>
-            </tr>
-        </thead>
-        <tbody>
-         <tr>
-           <th class='hourpay' scope="row">Casual</th>
-           <td>18$ p/h</td>
-           <td>$32 p/h</td>
-           <td>$50 p/h</td>
-         </tr>
-         <tr>
-           <th class='hourpay' scope="row">Part Time</th>
-           <td>$24 p/h</td>
-           <td>$28 p/h</td>
-           <td>$45 p/h</td>
-         </tr>
-        </tbody>
-		</table>
+<table>
+  <tr> <!-- defines table -->
+    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
+    <th class="title" colspan="5" scope="col">Junior Technician </th>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
+    <td>1+ years experience</td>
+    <td>Basic knowledge of computer hardware and software</td>
+    <td>Ability to troubleshoot common technical issues</td>
+    <td>Strong attention to detail</td>
+    <td>Good communication skills</td>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" rowspan="2" scope="row"> Responsibilities </th>
+    <td>Assist in the installation and configuration of computer systems</td>
+    <td>Provide technical support to end-users</td>
+    <td>Troubleshoot and resolve hardware and software issues</td>
+    <td>Maintain inventory of computer equipment and supplies</td>
+    <td>Document technical procedures and solutions</td>
+  </tr>
+  <tr>
+    <td>Work closely with senior technicians on complex issues</td>
+    <td>Participate in training sessions to improve technical skills</td>
+    <td>Ensure compliance with company IT policies and procedures</td>
+    <td>Contribute to team knowledge sharing</td>
+    <td>Assist in the setup of new workstations and peripherals</td>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" colspan="1" scope="row"> Benefits </th>
+    <td>Competitive salary</td>
+    <td>Flexible working hours</td>
+    <td>Opportunities for professional development</td>
+    <td>Collaborative and supportive team environment</td>
+    <td>Access to the latest tools and technologies</td>
+  </tr>
+  <tfoot>
+    <tr>
+      <th colspan="6" scope="col"> Description </th>
+    </tr>
+    <tr>
+      <td colspan="6"> We are looking for a motivated and enthusiastic part-time junior technician to join our IT support team. The ideal candidate will have a basic understanding of computer systems and a desire to learn and grow in the field of IT. If you are a </td>
+    </tr>
+  </tfoot>
+</table>
 
-      <table>
-         <caption>Casual / Part Time Web Dev</caption>
-         <thead>
-            <tr>
-              <th rowspan="3" scope="col">Hours / Pay</th>
-              <th colspan="3" scope="col">Pay Range</th>
-              <th colspan="1" scope="col"><a href="/Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">
-              Click to apply</th>
-            </tr>
-            <tr>
-              <th scope="col">Low</th>
-              <th scope="col">Med.</th>
-              <th scope="col">High</th>
-              <td scope="col">description: On-site Technician <br> for short term project</td>
-            </tr>
-        </thead>
-        <tbody>
-         <tr>
-           <th class='hourpay' scope="row">Casual</th>
-           <td>21$ p/h</td>
-           <td>$36 p/h</td>
-           <td>$55 p/h</td>
-         </tr>
-         <tr>
-           <th class='hourpay' scope="row">Part Time</th>
-           <td>$24 p/h </td>
-           <td>$28 p/h</td>
-           <td>$45 p/h</td>
-         </tr>
-        </tbody>
-		</table>
+<table>
+  <tr> <!-- defines table -->
+    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
+    <th class="title" colspan="5" scope="col">Senior Technician </th>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
+    <td>5+ years experience</td>
+    <td>In-depth knowledge of computer hardware and software</td>
+    <td>Strong problem-solving skills</td>
+    <td>Excellent communication and interpersonal skills</td>
+    <td>Ability to lead and mentor junior technicians</td>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" rowspan="2" scope="row"> Responsibilities </th>
+    <td>Lead the IT support team in resolving complex technical issues</td>
+    <td>Oversee the installation and configuration of computer systems</td>
+    <td>Provide training and mentorship to junior technicians</td>
+    <td>Develop and implement IT policies and procedures</td>
+    <td>Maintain relationships with vendors and service providers</td>
+  </tr>
+  <tr>
+    <td>Ensure compliance with company IT policies and procedures</td>
+    <td>Participate in strategic planning for IT infrastructure</td>
+    <td>Contribute to team knowledge sharing</td>
+    <td>Manage IT projects from inception to completion</td>
+    <td>Stay updated with the latest technology trends and advancements</td>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" colspan="1" scope="row"> Benefits </th>
+    <td>Competitive salary</td>
+    <td>Flexible working hours</td>
+    <td>Opportunities for professional development</td>
+    <td>Collaborative and supportive team environment</td>
+    <td>Access to the latest tools and technologies</td>
+  </tr>
+  <tfoot>
+    <tr>
+      <th colspan="6" scope="col"> Description </th>
+    </tr>
+    <tr>
+      <td colspan="6"> We are seeking an experienced and highly skilled part-time senior technician to lead our IT support team. The ideal candidate will have a strong background in IT, with a proven track record of resolving complex technical issues and leading</td>
+    </tr>
+  </tfoot>
+</table>
+
+<table>
+  <tr> <!-- defines table -->
+    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
+    <th class="title" colspan="5" scope="col">Consultant </th>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
+    <td>7+ years experience</td>
+    <td>Expertise in IT strategy and solutions</td>
+    <td>Strong analytical and problem-solving skills</td>
+    <td>Excellent communication and presentation skills</td>
+    <td>Ability to work independently and as part of a team</td>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" rowspan="2" scope="row"> Responsibilities </th>
+    <td>Provide expert advice and guidance on IT strategy and solutions</td>
+    <td>Conduct assessments of existing IT infrastructure and recommend improvements</td>
+    <td>Develop and implement IT strategies aligned with business goals</td>
+    <td>Collaborate with stakeholders to understand their needs and requirements</td>
+    <td>Stay updated with the latest technology trends and advancements</td>
+  </tr>
+  <tr>
+    <td>Work on multiple projects simultaneously</td>
+    <td>Ensure successful delivery of IT projects</td>
+    <td>Contribute to team knowledge sharing</td>
+    <td>Participate in industry events and conferences</td>
+    <td>Build and maintain relationships with clients and partners</td>
+  </tr>
+  <tr>
+    <th class="requiredtextbody" colspan="1" scope="row"> Benefits </th>
+    <td>Competitive salary</td>
+    <td>Flexible working hours</td>
+    <td>Opportunities for professional development</td>
+    <td>Collaborative and supportive team environment</td>
+    <td>Access to the latest tools and technologies</td>
+  </tr>
+  <tfoot>
+    <tr>
+      <th colspan="6" scope="col"> Description </th>
+    </tr>
+    <tr>
+      <td colspan="6"> We are looking for a highly experienced and knowledgeable part-time consultant to provide expert advice and guidance on IT strategy and solutions. The ideal candidate will have a strong background in IT, with a proven</td>
+    </tr>
+  </tfoot>
+</table>
