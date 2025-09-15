@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply for a Job</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<nav> 
-    <img src="logo.png" alt="Pixel Panic Studios Logo">
+<body class="apply">
+    
+    <nav class="apply-nav"> 
+    <img class="logo" src="styles/Photo/logo.png" alt="BTB logo">
     <ul class="menu">
-        <li><a href="index.html">Home🏠</a></li>
-        <li><a href="about.html">About Us👩‍💻</a></li>
-        <li><a href="jobs.html">Jobs💻</a></li>
-        <li><a href="apply.html">Apply💁‍♀️</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="apply.html">Apply</a></li>
     </ul>
-</nav>
+    </nav>
 
-<body>
+    <header class="apply-heading">
     <h1>BTB Game Studio - Job Application</h1>
-    <p>Please fill in the form below to apply for a position with us.</p>
+     <p class="tagline">
+            Fill out the form below and tell us why you're crazy enough to join Better Than Boys Studio.<br>
+            <span class="warning">Warning: once you're in, there's no turning back.</span>
+        </p>
+        <img src="styles/Photo/star.png" alt="star" class="star">
+        </header>
     <form action="formtest.php" method="post">
         <label for="jobref">Job Reference Number:</label>
         <input type="text" id="jobref" name="jobref" pattern="[A-Za-z0-9]{5}" maxlength="5" required>

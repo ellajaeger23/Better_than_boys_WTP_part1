@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* ---------- Index Section ---------- */
+/*Index Section*/
 body.index {
     font-family: "Courier New", monospace;
     background: black;
@@ -257,7 +257,7 @@ a:hover {
   font-family: "Courier New", monospace;
 }
 
-header {
+#about-header {
     background-image: url("Photo/nav.png"); 
     background-size: cover; /* image covers the whole header */
     background-position: center; /* image centered */
@@ -396,9 +396,133 @@ nav {
 
 /*title fonts*/
 
-h1, h2, h3 {
+#about-page h1,
+#about-page h2,
+#about-page h3 {
     font-family: "Orbitron", sans-serif;
     text-transform: uppercase; 
     letter-spacing: 2px;
   }
   
+/*Apply Section*/
+
+body.apply {
+    font-family: "Courier New", monospace;
+    background-image: url("Photo/form-bg.png");
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+
+.apply-heading {
+  background: #e5007d;
+  color: white;
+  padding: 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* keep star inside */
+}
+
+.apply-heading h1,
+.apply-heading .tagline {
+  position: relative;
+  z-index: 2; /* text always on top */
+}
+
+.apply-heading .tagline {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.apply-heading .warning {
+  color: yellow;
+  font-weight: bold;
+}
+
+.apply-heading .star {
+  position: absolute;
+  top: -30%;
+  right: 10%;
+  width: 280px;
+  z-index: 0;   /* put it behind */
+}
+
+/*Form*/
+
+form {
+  background: #231432;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 20, 147, 0.8);
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+form label {
+  display: inline-block;   /* instead of block */
+  margin-right: 1rem;      /* spacing between options */
+  font-weight: normal;     /* lighter for inline labels */
+}
+
+fieldset {
+  border: 1px solid hotpink;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+legend {
+  font-weight: bold;
+  color: hotpink;
+}
+
+/* Buttons */
+form input[type="submit"],
+form input[type="reset"] {
+  background: hotpink;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+  background: white;
+  color: hotpink;
+  border: 2px solid hotpink;
+}
