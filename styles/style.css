@@ -408,13 +408,19 @@ nav {
 
 body.apply {
     font-family: "Courier New", monospace;
-    background-image: url("Photo/form-bg.png");
+    background: black;
     color: white;
     margin: 0;
     padding: 0;
     line-height: 1.5;
 }
 
+
+.apply-nav {
+    background-image: url("Photo/nav.png"); 
+    background-size: cover; /* image covers the whole header */
+    background-position: center; /* image centered */
+  }
 
 .apply-heading {
   background: #e5007d;
@@ -423,6 +429,9 @@ body.apply {
   text-align: center;
   position: relative;
   overflow: hidden; /* keep star inside */
+  width: 80%;
+  margin: 2rem auto;      /* center horizontally */
+  border-radius: 8px;
 }
 
 .apply-heading h1,
