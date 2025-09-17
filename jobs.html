@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="Author" content="Allison Heath, Ella Jaeger, Minoo Ghasemi">
     <meta name="keywords" content="work, jobs, team, careers">
-    <title>Jobs Available</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Users/allie/school/webdev/GroupProject/Better_than_boys_WTP_part1/styles/stylesjobs.css">
+    
+    <title>Jobs Available</title>
 </head>
 
 <section class="headerandnav">
@@ -26,9 +27,6 @@
             <li>
               <a href="about.html">About</a>
             </li>
-            <li>
-              <a href="mailto:"></a>"
-            </li>
         </ul>
     </nav>
   <p>
@@ -45,6 +43,7 @@
 
 <body>
 
+<div>
 <section class="paytable">
       <table>
          <caption>Table of available jobs</caption>
@@ -94,7 +93,7 @@
 
         <!--                -->
 <section class="joblistings">
-  <p>Below are the current job openings at BTB Studios. Click on "Click to apply" next to each job title to start your application process.</p>
+  <p>Below are the current job openings at BTB Studios. <br> Click on "Click to apply" next to each job title to start your application process.</p>
 
   <details>
   <summary>Web Developer: 50K - 80K</summary>
@@ -102,7 +101,7 @@
 <table class="table1">
   <tr> <!-- defines table -->
     <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
-    <th class="title" colspan="5" scope="col">Web Developer</th>
+    <th class="title" colspan="5" scope="col">Web Developer [WD001]</th>
   </tr>
   <tr>
     <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
@@ -153,7 +152,7 @@
 <table class="table2">
   <tr> <!-- defines table -->
     <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
-    <th class="title" colspan="5" scope="col">Junior Technician </th>
+    <th class="title" colspan="5" scope="col">Junior Technician [TC001]</th>
   </tr>
   <tr>
     <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
@@ -204,7 +203,7 @@
 <table class="table3">
   <tr> <!-- defines table -->
     <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
-    <th class="title" colspan="5" scope="col">Senior Technician </th>
+    <th class="title" colspan="5" scope="col">Senior Technician [TC002]</th>
   </tr>
   <tr>
     <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
@@ -255,7 +254,7 @@
 <table class="table4">
   <tr> <!-- defines table -->
     <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
-    <th class="title" colspan="5" scope="col">Consultant </th>
+    <th class="title" colspan="5" scope="col">Consultant [CO001]</th>
   </tr>
   <tr>
     <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
@@ -306,7 +305,7 @@
 <table class="table5">
   <tr> <!-- defines table -->
     <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
-    <th class="title" colspan="5" scope="col">Writer </th>
+    <th class="title" colspan="5" scope="col">Writer [WR001]</th>
   </tr>
   <tr>
     <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
@@ -350,39 +349,13 @@
 </details>
 
 </section>
+</div>
 
 <p>
   Please write or provide a brief cover letter explaining why you would be a great fit for our team, along with your resume or CV.
   <br> We look forward to reviewing your application and potentially welcoming you to our dynamic team
 </p>
 
-<section class="applicationform">
-<tr>
-  <th colspan="4" scope="row"> Note: All positions are subject to availability and may require specific qualifications or experience. </th>
-  <td>
-    Provide cover letter below
-    <form action="/submit_cover_letter" method="post">
-      <label for="cover_letter">Cover Letter:</label><br>
-      <textarea id="cover_letter" name="cover_letter" rows="10" cols="50" placeholder="Write your cover letter here..."></textarea><br>
-      <input type="submit" value="Submit Application">
-    </form>
-    <form action="/upload_cover_letter" method="post" enctype="multipart/form-data">
-      <label for="cover_letter">Or, Upload Directly:</label><br>
-      <input type="file" id="cover_letter" name="cover_letter" accept=".pdf,.doc,.docx"><br>
-      <input type="submit" value="Upload Cover Letter">
-    </form>
-  </td>
-  <td>
-    Provide Resume below
-    </form>
-    <form action="/upload_resume" method="post" enctype="multipart/form-data">
-      <label for="resume">Upload:</label><br>
-      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br>
-      <input type="submit" value="upload resume">
-    </form>
-  </td>
-</tr>
-</section>
 <footer>
   <p>&copy; BTB Studios 2025. All rights reserved.</p>
 </footer>
