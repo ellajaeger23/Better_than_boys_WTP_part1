@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="Author" content="Allison Heath, Ella Jaeger, Minoo Ghasemi">
@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="/Users/allie/school/webdev/GroupProject/Better_than_boys_WTP_part1/styles/stylesjobs.css">
 </head>
 
-<header>
-  <h1>Looking for work and pay?</h1>
-</header>
+<section class="headerandnav">
 
-<aside>
+<aside id="sidebarnav">
     <nav>
         <ul>
             <li>
@@ -33,50 +31,21 @@
             </li>
         </ul>
     </nav>
-</aside>
-
-<body>
-<p>
-  <h2 id="apply">apply</h2>
-  Welcome to the application page, we're excited that you're interested in joining our team! 
+  <p>
+    <p>
+  <h2 id="apply">Looking for work?</h2>
+  Welcome to the listings page, we're excited that you're interested in joining our team! 
   <br> At BTB Studios we value talent, dedication, and a passion for technology. 
   To apply for a position, please click the "Click to apply" link next to the job description in the listings below to head to our application page.
-</p>
-
-<p>
-  Please write or provide a brief cover letter explaining why you would be a great fit for our team, along with your resume or CV.
-  <br> We look forward to reviewing your application and potentially welcoming you to our dynamic team
-</p>
-
-<section class="applicationform">
-<tr>
-  <th colspan="4" scope="row"> Note: All positions are subject to availability and may require specific qualifications or experience. </th>
-  <td>
-    Provide cover letter below
-    <form action="/submit_cover_letter" method="post">
-      <label for="cover_letter">Cover Letter:</label><br>
-      <textarea id="cover_letter" name="cover_letter" rows="10" cols="50" placeholder="Write your cover letter here..."></textarea><br>
-      <input type="submit" value="Submit Application">
-    </form>
-    <form action="/upload_cover_letter" method="post" enctype="multipart/form-data">
-      <label for="cover_letter">Or, Upload Directly:</label><br>
-      <input type="file" id="cover_letter" name="cover_letter" accept=".pdf,.doc,.docx"><br>
-      <input type="submit" value="Upload Cover Letter">
-    </form>
-  </td>
-  <td>
-    Provide Resume below
-    </form>
-    <form action="/upload_resume" method="post" enctype="multipart/form-data">
-      <label for="resume">Upload:</label><br>
-      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br>
-      <input type="submit" value="upload resume">
-    </form>
-  </td>
-</tr>
+  better than boys studios is a small team of dreamers, coders, and professional procrastinators trying to ship our next game before our laptops catch fire. 
+  </p>
+</aside>
+  <img src="/Users/allie/school/webdev/GroupProject/Better_than_boys_WTP_part1/styles/Photo/logo1-removebg-preview.png" alt="Pixel Panic Studios Logo" class="logo">
 </section>
 
-<section clas="paytable">
+<body>
+
+<section class="paytable">
       <table>
          <caption>Table of available jobs</caption>
          <thead>
@@ -87,47 +56,40 @@
               <th colspan="3" scope="col">Pay</th>
             </tr>
             <tr>
-              <th scope="col">Salary</th>
-              <th scope="col">per hour</th>
-              <th scope="col">Per week</th>
+              <th scope="col">Min.</th>
+              <th scope="col">Max.</th>
             </tr>
         </thead>
         <tbody>
          <tr>
            <th class='jobslist' scope="row">Junior Technician</th>
-           <td>$60</td>
-           <td>$40</td>
-           <td>$100</td>
+           <td>$30K</td>
+           <td>$50K</td>
          </tr>
         <tbody>
          <tr>
            <th class='jobslist' scope="row">Senior Technician</th>
-           <td>$60</td>
-           <td>$40</td>
-           <td>$100</td>
+           <td>$70K</td>
+           <td>$100K</td>
          </tr>
         <tbody>
          <tr>
            <th class='jobslist' scope="row">Consultant</th>
-           <td>$60</td>
-           <td>$40</td>
-           <td>$100</td>
+           <td>$70K</td>
+           <td>$120K</td>
          </tr>
          <tr>
            <th class='jobslist' scope="row">Web Developer</th>
-           <td>$40</td>
-           <td>$40</td>
-           <td>$80</td>
+           <td>$50K</td>
+           <td>$80K</td>
          </tr>
          <tr>
             <th class="jobslist" scope="row"> Writer</th>
-            <td>$180</td>
-            <td>$500</td>
-            <td>$500</td>
+            <td>$40K</td>
+            <td>$70K</td>
          </tr>
         </tbody>
 		</table>
-</body>
 </section>
 
         <!--                -->
@@ -388,3 +350,45 @@
 </details>
 
 </section>
+
+<p>
+  Please write or provide a brief cover letter explaining why you would be a great fit for our team, along with your resume or CV.
+  <br> We look forward to reviewing your application and potentially welcoming you to our dynamic team
+</p>
+
+<section class="applicationform">
+<tr>
+  <th colspan="4" scope="row"> Note: All positions are subject to availability and may require specific qualifications or experience. </th>
+  <td>
+    Provide cover letter below
+    <form action="/submit_cover_letter" method="post">
+      <label for="cover_letter">Cover Letter:</label><br>
+      <textarea id="cover_letter" name="cover_letter" rows="10" cols="50" placeholder="Write your cover letter here..."></textarea><br>
+      <input type="submit" value="Submit Application">
+    </form>
+    <form action="/upload_cover_letter" method="post" enctype="multipart/form-data">
+      <label for="cover_letter">Or, Upload Directly:</label><br>
+      <input type="file" id="cover_letter" name="cover_letter" accept=".pdf,.doc,.docx"><br>
+      <input type="submit" value="Upload Cover Letter">
+    </form>
+  </td>
+  <td>
+    Provide Resume below
+    </form>
+    <form action="/upload_resume" method="post" enctype="multipart/form-data">
+      <label for="resume">Upload:</label><br>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br>
+      <input type="submit" value="upload resume">
+    </form>
+  </td>
+</tr>
+</section>
+<footer>
+  <p>&copy; BTB Studios 2025. All rights reserved.</p>
+</footer>
+</body>
+
+<footer>
+    <p>&copy; BTB 2025. All rights reserved.</p>
+</footer>
+</html>
