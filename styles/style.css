@@ -498,20 +498,16 @@ nav {
 }
 
 /* form sections */
-#applicationform, 
-#resumeform {
+#applicationform {
   background: #111016;
   border: 1px solid #2a2330;
   border-radius: 8px;
   padding: 25px;
   margin: 30px auto;
   max-width: 800px;
+  
 }
 #applicationform h2,
-#resumeform h3 {
-  color: #ffbde6;
-  margin-bottom: 15px;
-}
 
 /* tables inside forms */
 #applicationform table {
@@ -556,16 +552,34 @@ nav {
   margin-right: 6px;
 }
 
-/* submit buttons */
+/* submit and reset buttons */
+.button-container {
+  text-align: center; /* centers inline elements */
+  margin-top: 20px; 
+}
+
+.apply-page input[type="submit"],
+.apply-page input[type="reset"] {
+  border-radius: 4px;          /* rectangle corners */
+  display: inline-block;       /* allow buttons next to each other */
+  width: auto;                 /* fit content */
+  margin: 0 5px;               /* spacing between buttons */
+  padding: 10px 20px;          /* bigger clickable area */
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
 .apply-page input[type="submit"] {
   background: #ff7ac6;
   color: #000;
-  font-weight: bold;
   border: none;
-  padding: 10px 18px;
-  border-radius: 25px;
-  cursor: pointer;
-  margin-top: 12px;
+}
+
+.apply-page input[type="reset"] {
+  background: #555;
+  color: #fff;
+  border: none;
 }
 
 
