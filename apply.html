@@ -37,9 +37,15 @@
         <table>
           <tbody>
             <tr>
-              <th>Job reference number</th>
-              <td><input type="text" name="jobref" id="jobref" maxlength="20" size="50" required></td>
-            </tr>
+                <th>Job reference number</th>
+                <td>
+                  <select name="jobref" id="jobref" required>
+                    <option value="">-- Select a job --</option>
+                    <option value="WD001">WD001 – Web Developer</option>
+                    <option value="TC0A1">TC0A1 – Junior Technician</option>
+                  </select>
+                </td>
+              </tr>
             <tr>
               <th>First Name</th>
               <td><input type="text" name="firstname" id="firstname" maxlength="20" size="50" required></td>
