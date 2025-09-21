@@ -1,208 +1,163 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="Allison Heath">
+  <meta name="keywords" content="apply, resume, offer, join">
+  <meta name="description" content="Application data home page">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Data Home</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
 
-    
-    <meta name="Author" content="Allison Heath">
-    <meta name="keywords" content="apply, resume, offer, join">
-    <meta name="description" content="Application data home page">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Data Home</title>
-    <link rel="stylesheet" href="styles/stylesapply.css">
+<body id="about-page" class="apply-page">
 
-<body>
+    <!--Nav Bar-->
 
-<div class="bodyoftext">
+  <header id="about-header">
+    <nav id="about-nav">
+      <img src="styles/Photo/logo.png" alt="BTB logo" class="logo">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="apply.html">Apply</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="apply-hero">
+    <h1>Apply</h1>
+    <p class="tagline">Join the studio. Bring the sparkle 💖</p>
+  </section>
+  
+    <!-- Application Form -->
     <section id="applicationform">
-    <table>
-        <tbody>
+      <form action="/submit_application" method="post">
+        <table>
+          <tbody>
             <tr>
-                <th>
-                    Job reference number
-                </th>
-                <td>
-                    <input type="text" name="firstname" id="firstname" maxlength="20" size="50" required="required">
-                </td>
+              <th>Job reference number</th>
+              <td><input type="text" name="jobref" id="jobref" maxlength="20" size="50" required></td>
             </tr>
             <tr>
-                <th>
-                    First Name
-                </th>
-                <td>
-                    <input type="text" name="firstname" id="firstname" maxlength="20" size="50" required="required">
-                </td>
+              <th>First Name</th>
+              <td><input type="text" name="firstname" id="firstname" maxlength="20" size="50" required></td>
             </tr>
             <tr>
-                <th>
-                    Last Name
-                </th>
-                <td>
-                    <input type="text" name="firstname" id="firstname" maxlength="20" size="50" required="required">
-                </td>
+              <th>Last Name</th>
+              <td><input type="text" name="lastname" id="lastname" maxlength="20" size="50" required></td>
             </tr>
             <tr>
-                <th>
-                    DOB
-                </th>
-                <td>
-                    <input type="date" name="dob" id="dob" placeholder="dd-mm-yyyy" maxlength="10" size="50">
-                </td>
+              <th>DOB</th>
+              <td><input type="date" name="dob" id="dob" required></td>
             </tr>
             <tr>
-                <th>
-                    Gender
-                </th>
-                <td>
-                    <fieldset>
-                    <table>
-                        <td><ul>
-                            <label for="male">Male</label>
-                            <input type="radio" id="male" name="sex" value="male">
-                        </td></ul>
-                        <td><ul>
-                            <label for="female">Female</label>
-                            <input type="radio" id="female" name="sex" value="female">
-                        </td></ul>
-                        <td><ul>
-                            <label for="non-binary">non-binary</label>
-                            <input type="radio" id="non-binary" name="sex" value="non-binary">
-                        </td></ul>
-                        <td><ul>
-                            <label for="other">self describe</label>
-                            <input type="textarea" id="other" name="other" rows="1" cols="20">
-                        </td></ul>
-                    </table>
-                    </fieldset>
-                </td>
+              <th>Gender</th>
+              <td>
+                <label><input type="radio" name="sex" value="male"> Male</label>
+                <label><input type="radio" name="sex" value="female"> Female</label>
+                <label><input type="radio" name="sex" value="non-binary"> Non-binary</label>
+                <label>Self describe: <input type="text" name="other"></label>
+              </td>
             </tr>
             <tr>
-                <th>
-                    Street Address
-                </th>
-                <td>
-                    <input type="text" name="streetaddress" id="streetaddress" maxlength="40" size="50" required="required">
-                </td>
+              <th>Street Address</th>
+              <td><input type="text" name="streetaddress" id="streetaddress" maxlength="40" size="50" required></td>
             </tr>
             <tr>
-                <th>
-                    Suburb/Town
-                </th>
-                <td>
-                    <input type="text" name="town" id="town" maxlength="40" size="50" required="required">
-                </td>
+              <th>Suburb/Town</th>
+              <td><input type="text" name="town" id="town" maxlength="40" size="50" required></td>
             </tr>
             <tr>
-                <th>
-                    State
-                </th>
-                <td>
-                    <label for="state"></label>
-                    <select name="state" id="state">
-                        <option value="vic">Victoria</option>
-                        <option value="nsw">New South Wales</option>
-                        <option value="tas">Tasmania</option>
-                        <option value="qld">Queensland</option>
-                        <option value="sa">South Australia</option>
-                        <option value="wa">Western Australia</option>
-                        <option value="nt">Northern Territories</option>
-                    </select>
-                </td>
+              <th>State</th>
+              <td>
+                <select name="state" id="state">
+                  <option value="vic">Victoria</option>
+                  <option value="nsw">New South Wales</option>
+                  <option value="tas">Tasmania</option>
+                  <option value="qld">Queensland</option>
+                  <option value="sa">South Australia</option>
+                  <option value="wa">Western Australia</option>
+                  <option value="nt">Northern Territories</option>
+                </select>
+              </td>
             </tr>
             <tr>
-                <th>
-                    Postcode
-                </th>
-                <td>
-                    <input type="text" name="town" id="town" maxlength="40" size="50" required="required">
-                </td>
+              <th>Postcode</th>
+              <td><input type="text" name="postcode" id="postcode" maxlength="10" required></td>
             </tr>
             <tr>
-                <th>
-                    Email
-                </th>
-                <td>
-                    <input type="email" name="email" id="email" required="required">
-                </td>
+              <th>Email</th>
+              <td><input type="email" name="email" id="email" required></td>
             </tr>
             <tr>
-                <th>
-                    Phone number
-                </th>
-                <td>
-                    <input type="number" name="phone" id="phone" min="8" max="12" required="required">
-                </td>
+              <th>Phone number</th>
+              <td><input type="tel" name="phone" id="phone" required></td>
             </tr>
             <tr>
-                <th>
-                    Skill List
-                </th>
-                <td>
-                    <legend>please select</legend>
-                    <label for="skills"></label>
-                    <br>
-                    <label for="skill1">skill1</label>
-                    <input type="checkbox" id="skills" name="skills" value="skill1">
-                    <label for="skill2">skill2</label>
-                    <input type="checkbox" id="skills" name="skills" value="skill2">
-                    <label for="skill3">skill3</label>
-                    <input type="checkbox" id="skills" name="skills" value="skill3">
-                    <label for="skill4">skill4</label>
-                    <input type="checkbox" id="skills" name="skills" value="skill4">
-                    <br>
-                    <label for="skill5">skill5</label>
-                    <input type="checkbox" id="skills" name="skills" value="skill5">
-                    <label for="skill6">skill6</label>
-                    <input type="checkbox" id="skills" name="skills" value="skill6">
-                    <label for="skill7">skill7</label>
-                    <input type="checkbox" id="skills" name="skills" value="skill7">
-                    <label for="skill8">skill8</label>
-                    <input type="checkbox" id="skills" name="skills" value="skill8">
-                </td>
+              <th>Skill List</th>
+              <td>
+                <label><input type="checkbox" name="skills" value="skill1"> Skill 1</label>
+                <label><input type="checkbox" name="skills" value="skill2"> Skill 2</label>
+                <label><input type="checkbox" name="skills" value="skill3"> Skill 3</label>
+                <label><input type="checkbox" name="skills" value="skill4"> Skill 4</label>
+                <br>
+                <label><input type="checkbox" name="skills" value="skill5"> Skill 5</label>
+                <label><input type="checkbox" name="skills" value="skill6"> Skill 6</label>
+                <label><input type="checkbox" name="skills" value="skill7"> Skill 7</label>
+                <label><input type="checkbox" name="skills" value="skill8"> Skill 8</label>
+              </td>
             </tr>
             <tr>
-                <th>
-                    Other skills
-                </th>
-                <td>
-                    <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
-                </td>
-            </tr>                                    
-        </tbody> 
-	</table>
+              <th>Other skills</th>
+              <td><textarea id="comments" name="comments" rows="5" cols="40"></textarea></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
     </section>
 
-<section id="resumeform">
-<tr>
-  <th colspan="4" scope="row"> Note: All positions are subject to availability and may require specific qualifications or experience. </th>
-  <td>
-    Provide cover letter below
-    <form action="/submit_cover_letter" method="post">
-      <label for="cover_letter">Cover Letter:</label><br>
-      <textarea id="cover_letter" name="cover_letter" rows="10" cols="50" placeholder="Write your cover letter here..."></textarea><br>
-      <input type="submit" value="Submit Application">
-    </form>
-    <form action="/upload_cover_letter" method="post" enctype="multipart/form-data">
-      <label for="cover_letter">Or, Upload Directly:</label><br>
-      <input type="file" id="cover_letter" name="cover_letter" accept=".pdf,.doc,.docx"><br>
-      <input type="submit" value="Upload Cover Letter">
-    </form>
-  </td>
-  <td>
-    Provide Resume below
-    </form>
-    <form action="/upload_resume" method="post" enctype="multipart/form-data">
-      <label for="resume">Upload:</label><br>
-      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br>
-      <input type="submit" value="upload resume">
-    </form>
-  </td>
-</tr>
-</section>
+    <!-- Resume / Cover Letter -->
+    <section id="resumeform">
+      <p><strong>Note:</strong> All positions are subject to availability and may require specific qualifications or experience.</p>
+
+      <h3>Provide Cover Letter</h3>
+      <form action="/submit_cover_letter" method="post">
+        <textarea id="cover_letter" name="cover_letter" rows="10" cols="50" placeholder="Write your cover letter here..."></textarea><br>
+        <input type="submit" value="Submit Cover Letter">
+      </form>
+
+      <form action="/upload_cover_letter" method="post" enctype="multipart/form-data">
+        <label for="cover_letter_file">Or, Upload Cover Letter:</label><br>
+        <input type="file" id="cover_letter_file" name="cover_letter" accept=".pdf,.doc,.docx"><br>
+        <input type="submit" value="Upload Cover Letter">
+      </form>
+
+      <h3>Provide Resume</h3>
+      <form action="/upload_resume" method="post" enctype="multipart/form-data">
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br>
+        <input type="submit" value="Upload Resume">
+      </form>
+    </section>
+  </div>
+
+  <!-- Decorative characters/images -->
+  <div class="decorations">
+    <img src="styles/Photo/cat.png" alt="Pixel cat mascot" class="cat">
+    <img src="styles/Photo/doodle1.png" alt="Doodle decoration" class="doodle-left">
+    <img src="styles/Photo/doodle2.png" alt="Doodle decoration" class="doodle-right">
 </div>
+</section>
 
+  <!-- Footer -->
+  <footer id="about-footer">
+    <p>&copy; 2025 Better Than Boys Studio. All rights reserved.</p>
+    <p>
+      <a href="https://github.com/ellajaeger23/Better_than_boys_WTP_part1.git" target="_blank">GitHub Repository</a> | 
+      <a href="https://ellajaeger23.atlassian.net/jira/software/projects/SCRUM/boards/1" target="_blank">Jira Board</a> | 
+      <a href="mailto:phuonguyen.brv@gmail.com">betterthanboys@gmail.com</a>
+    </p>
+  </footer>
 </body>
-
-<footer>
-    <p>Form created by Allison Heath for WTP assessment part 1</p>
-</footer>
-
 </html>

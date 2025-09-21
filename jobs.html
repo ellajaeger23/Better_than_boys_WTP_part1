@@ -1,367 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="Author" content="Allison Heath, Ella Jaeger, Minoo Ghasemi">
-    <meta name="keywords" content="work, jobs, team, careers">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Users/allie/school/webdev/GroupProject/Better_than_boys_WTP_part1/styles/stylesjobs.css">
-    
-    <title>Jobs Available</title>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Allison Heath, Ella Jaeger, Minoo Ghasemi" />
+  <meta name="keywords" content="work, jobs, team, careers" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <title>Jobs Available</title>
 </head>
 
-<section class="headerandnav">
+<body id="jobs">
+  
+<!--Nav Bar-->
 
-<aside id="sidebarnav">
-    <nav>
-        <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="jobs.html">Jobs</a>
-            </li>
-            <li>
-              <a href="apply.html">Apply</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-        </ul>
-    </nav>
-  <p>
-    <p>
-  <h2 id="apply">Looking for work?</h2>
-  Welcome to the listings page, we're excited that you're interested in joining our team! 
-  <br> At BTB Studios we value talent, dedication, and a passion for technology. 
-  To apply for a position, please click the "Click to apply" link next to the job description in the listings below to head to our application page.
-  better than boys studios is a small team of dreamers, coders, and professional procrastinators trying to ship our next game before our laptops catch fire. 
-  </p>
-</aside>
-  <img src="/Users/allie/school/webdev/GroupProject/Better_than_boys_WTP_part1/styles/Photo/logo1-removebg-preview.png" alt="Pixel Panic Studios Logo" class="logo">
-</section>
+<header id="about-header">
+  <nav id="about-nav">
+    <img src="styles/Photo/logo.png" alt="BTB logo" class="logo">
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="jobs.html">Jobs</a></li>
+      <li><a href="apply.html">Apply</a></li>
+    </ul>
+  </nav>
+</header>
 
-<body>
 
-<div>
-<section class="paytable">
+  <main id="jobs-content">
+    <!-- Sidebar / Intro -->
+    <aside id="sidebarnav" aria-labelledby="apply-intro-title">
+      <h2 id="apply-intro-title">Looking for work?</h2>
+      <p>
+        We’re a small team of dreamers, coders, and professional procrastinators trying to
+        ship our next game before our laptops catch fire. If that sounds like you, read on.
+      </p>
+      <p>
+        To apply, open the role below and hit <strong>Click to apply</strong> — you’ll be taken to our
+        application page.
+      </p>
+    </aside>
+
+    <!-- Quick Pay Table (optional summary) -->
+    <section class="paytable" aria-labelledby="pay-table-title">
+      <h2 id="pay-table-title">Open Roles</h2>
       <table>
-         <caption>Table of available jobs</caption>
-         <thead>
-            <tr>
-            <!-- the scope attribute assists non-visual user agents -->
-            <!-- rowspan and colspan allow multiple cells to be merged -->
-              <th rowspan="2" scope="col">positions</th>
-              <th colspan="3" scope="col">Pay</th>
-            </tr>
-            <tr>
-              <th scope="col">Min.</th>
-              <th scope="col">Max.</th>
-            </tr>
+        <caption class="visually-hidden">Summary of available jobs and salary</caption>
+        <thead>
+          <tr>
+            <th scope="col">Position</th>
+            <th scope="col">Min.</th>
+            <th scope="col">Max.</th>
+          </tr>
         </thead>
         <tbody>
-         <tr>
-           <th class='jobslist' scope="row">Junior Technician</th>
-           <td>$30K</td>
-           <td>$50K</td>
-         </tr>
-        <tbody>
-         <tr>
-           <th class='jobslist' scope="row">Senior Technician</th>
-           <td>$70K</td>
-           <td>$100K</td>
-         </tr>
-        <tbody>
-         <tr>
-           <th class='jobslist' scope="row">Consultant</th>
-           <td>$70K</td>
-           <td>$120K</td>
-         </tr>
-         <tr>
-           <th class='jobslist' scope="row">Web Developer</th>
-           <td>$50K</td>
-           <td>$80K</td>
-         </tr>
-         <tr>
-            <th class="jobslist" scope="row"> Writer</th>
-            <td>$40K</td>
-            <td>$70K</td>
-         </tr>
+          <tr>
+            <th class="jobslist" scope="row">Web Developer</th>
+            <td>$50K</td>
+            <td>$80K</td>
+          </tr>
+          <tr>
+            <th class="jobslist" scope="row">Junior Technician</th>
+            <td>$30K</td>
+            <td>$50K</td>
+          </tr>
         </tbody>
-		</table>
-</section>
+      </table>
+    </section>
 
-        <!--                -->
-<section class="joblistings">
-  <p>Below are the current job openings at BTB Studios. <br> Click on "Click to apply" next to each job title to start your application process.</p>
+    <!-- Role 1 -->
+    <section aria-labelledby="wd-title">
+      <h2 id="wd-title">Web Developer</h2>
 
-  <details>
-  <summary>Web Developer: 50K - 80K</summary>
+      <article aria-labelledby="wd-ref">
+        <h3 id="wd-ref">Reference: <code>WD001</code></h3>
+        <p class="short-desc">
+          Build and ship polished web experiences for our marketing sites and game communities.
+          You’ll collaborate with design and content, and keep our pages blazing fast.
+        </p>
 
-<table class="table1">
-  <tr> <!-- defines table -->
-    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
-    <th class="title" colspan="5" scope="col">Web Developer [WD001]</th>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
-    <td>3+ years experience</td>
-    <td>Proficiency in HTML, CSS, JavaScript</td>
-    <td>Experience with responsive design</td>
-    <td>Strong problem-solving skills</td>
-    <td>Excellent communication skills</td>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" rowspan="2" scope="row"> Responsibilities </th>
-    <td>Develop and maintain websites</td>
-    <td>Collaborate with designers and content creators</td>
-    <td>Optimize website performance</td>
-    <td>Troubleshoot and resolve issues</td>
-    <td>Stay updated with web development trends</td>
-  </tr>
-  <tr>
-    <td>Work on multiple projects simultaneously</td>
-    <td>Ensure cross-browser compatibility</td>
-    <td>Implement SEO best practices</td>
-    <td>Participate in code reviews</td>
-    <td>Contribute to team knowledge sharing</td>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" colspan="1" scope="row"> Benefits </th>
-    <td>Competitive salary</td>
-    <td>Flexible working hours</td>
-    <td>Opportunities for professional development</td>
-    <td>Collaborative and supportive team environment</td>
-    <td>Access to the latest tools and technologies</td>
-  </tr>
-  <tfoot>
-    <tr>
-      <th colspan="6" scope="col"> Description </th>
-    </tr>
-    <tr>
-      <td colspan="6"> We are seeking a skilled and motivated part-time web developer to join our dynamic team. The ideal candidate will have a strong background in web development, with a passion for creating engaging and user-friendly websites. If you are a proactive individual who thrives in a fast-paced environment, we would love to hear from you!</td>
-    </tr>
-  </tfoot>
-</table>
+        <p><strong>Salary:</strong> $50K – $80K (pro-rata for part-time)</p>
+        <p><strong>Reporting line:</strong> Reports to the Engineering Lead</p>
 
-</details>
+        <h3>Key responsibilities</h3>
+        <!-- Ordered list required by rubric -->
+        <ol>
+          <li>Develop, test, and deploy website features and components.</li>
+          <li>Collaborate with designers to implement responsive layouts.</li>
+          <li>Optimise performance, accessibility, and SEO.</li>
+          <li>Fix bugs and participate in code reviews.</li>
+          <li>Document patterns and share knowledge with the team.</li>
+        </ol>
 
-<details>
-<summary>Junior Technician: 30K - 50K</summary>
+        <h3>Essential requirements</h3>
+        <!-- Unordered list required by rubric -->
+        <ul>
+          <li>3+ years with HTML, CSS, and JavaScript.</li>
+          <li>Comfortable with responsive design and browser quirks.</li>
+          <li>Version control (Git) and basic CLI use.</li>
+          <li>Clear written and verbal communication.</li>
+        </ul>
 
-<table class="table2">
-  <tr> <!-- defines table -->
-    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
-    <th class="title" colspan="5" scope="col">Junior Technician [TC001]</th>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
-    <td>1+ years experience</td>
-    <td>Basic knowledge of computer hardware and software</td>
-    <td>Ability to troubleshoot common technical issues</td>
-    <td>Strong attention to detail</td>
-    <td>Good communication skills</td>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" rowspan="2" scope="row"> Responsibilities </th>
-    <td>Assist in the installation and configuration of computer systems</td>
-    <td>Provide technical support to end-users</td>
-    <td>Troubleshoot and resolve hardware and software issues</td>
-    <td>Maintain inventory of computer equipment and supplies</td>
-    <td>Document technical procedures and solutions</td>
-  </tr>
-  <tr>
-    <td>Work closely with senior technicians on complex issues</td>
-    <td>Participate in training sessions to improve technical skills</td>
-    <td>Ensure compliance with company IT policies and procedures</td>
-    <td>Contribute to team knowledge sharing</td>
-    <td>Assist in the setup of new workstations and peripherals</td>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" colspan="1" scope="row"> Benefits </th>
-    <td>Competitive salary</td>
-    <td>Flexible working hours</td>
-    <td>Opportunities for professional development</td>
-    <td>Collaborative and supportive team environment</td>
-    <td>Access to the latest tools and technologies</td>
-  </tr>
-  <tfoot>
-    <tr>
-      <th colspan="6" scope="col"> Description </th>
-    </tr>
-    <tr>
-      <td colspan="6"> We are looking for a motivated and enthusiastic part-time junior technician to join our IT support team. The ideal candidate will have a basic understanding of computer systems and a desire to learn and grow in the field of IT. If you are a </td>
-    </tr>
-  </tfoot>
-</table>
+        <h3>Preferable (nice to have)</h3>
+        <ul>
+          <li>Experience with a modern framework (React/Vue/Svelte).</li>
+          <li>Basic SEO and analytics familiarity.</li>
+          <li>Accessibility fundamentals (WCAG).</li>
+        </ul>
 
-</details>
+        <p class="apply-cta">
+          <a class="btn" href="apply.html" aria-label="Apply for Web Developer (WD001)">Click to apply</a>
+        </p>
+      </article>
+    </section>
 
-<details>
-<summary>Senior Technician: 70K - 100K</summary>
+    <!-- Role 2 -->
+    <section aria-labelledby="jt-title">
+      <h2 id="jt-title">Junior Technician</h2>
 
-<table class="table3">
-  <tr> <!-- defines table -->
-    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
-    <th class="title" colspan="5" scope="col">Senior Technician [TC002]</th>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
-    <td>5+ years experience</td>
-    <td>In-depth knowledge of computer hardware and software</td>
-    <td>Strong problem-solving skills</td>
-    <td>Excellent communication and interpersonal skills</td>
-    <td>Ability to lead and mentor junior technicians</td>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" rowspan="2" scope="row"> Responsibilities </th>
-    <td>Lead the IT support team in resolving complex technical issues</td>
-    <td>Oversee the installation and configuration of computer systems</td>
-    <td>Provide training and mentorship to junior technicians</td>
-    <td>Develop and implement IT policies and procedures</td>
-    <td>Maintain relationships with vendors and service providers</td>
-  </tr>
-  <tr>
-    <td>Ensure compliance with company IT policies and procedures</td>
-    <td>Participate in strategic planning for IT infrastructure</td>
-    <td>Contribute to team knowledge sharing</td>
-    <td>Manage IT projects from inception to completion</td>
-    <td>Stay updated with the latest technology trends and advancements</td>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" colspan="1" scope="row"> Benefits </th>
-    <td>Competitive salary</td>
-    <td>Flexible working hours</td>
-    <td>Opportunities for professional development</td>
-    <td>Collaborative and supportive team environment</td>
-    <td>Access to the latest tools and technologies</td>
-  </tr>
-  <tfoot>
-    <tr>
-      <th colspan="6" scope="col"> Description </th>
-    </tr>
-    <tr>
-      <td colspan="6"> We are seeking an experienced and highly skilled part-time senior technician to lead our IT support team. The ideal candidate will have a strong background in IT, with a proven track record of resolving complex technical issues and leading</td>
-    </tr>
-  </tfoot>
-</table>
+      <article aria-labelledby="jt-ref">
+        <h3 id="jt-ref">Reference: <code>TC0A1</code></h3>
+        <p class="short-desc">
+          Help set up, maintain, and troubleshoot our studio hardware and software so the team
+          can focus on creating. Great starter role with lots of learning.
+        </p>
 
-</details>
+        <p><strong>Salary:</strong> $30K – $50K</p>
+        <p><strong>Reporting line:</strong> Reports to the Senior Technician</p>
 
-<details>
-<summary>Consultant: 70K - 120K</summary>
+        <h3>Key responsibilities</h3>
+        <ol>
+          <li>Deploy and configure workstations and peripherals.</li>
+          <li>Provide first-line support to artists and engineers.</li>
+          <li>Log, triage, and resolve tickets with supervision.</li>
+          <li>Maintain asset inventory and update documentation.</li>
+          <li>Escalate complex issues to senior staff as needed.</li>
+        </ol>
 
-<table class="table4">
-  <tr> <!-- defines table -->
-    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
-    <th class="title" colspan="5" scope="col">Consultant [CO001]</th>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
-    <td>7+ years experience</td>
-    <td>Expertise in IT strategy and solutions</td>
-    <td>Strong analytical and problem-solving skills</td>
-    <td>Excellent communication and presentation skills</td>
-    <td>Ability to work independently and as part of a team</td>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" rowspan="2" scope="row"> Responsibilities </th>
-    <td>Provide expert advice and guidance on IT strategy and solutions</td>
-    <td>Conduct assessments of existing IT infrastructure and recommend improvements</td>
-    <td>Develop and implement IT strategies aligned with business goals</td>
-    <td>Collaborate with stakeholders to understand their needs and requirements</td>
-    <td>Stay updated with the latest technology trends and advancements</td>
-  </tr>
-  <tr>
-    <td>Work on multiple projects simultaneously</td>
-    <td>Ensure successful delivery of IT projects</td>
-    <td>Contribute to team knowledge sharing</td>
-    <td>Participate in industry events and conferences</td>
-    <td>Build and maintain relationships with clients and partners</td>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" colspan="1" scope="row"> Benefits </th>
-    <td>Competitive salary</td>
-    <td>Flexible working hours</td>
-    <td>Opportunities for professional development</td>
-    <td>Collaborative and supportive team environment</td>
-    <td>Access to the latest tools and technologies</td>
-  </tr>
-  <tfoot>
-    <tr>
-      <th colspan="6" scope="col"> Description </th>
-    </tr>
-    <tr>
-      <td colspan="6"> We are looking for a highly experienced and knowledgeable part-time consultant to provide expert advice and guidance on IT strategy and solutions. The ideal candidate will have a strong background in IT, with a proven</td>
-    </tr>
-  </tfoot>
-</table>
+        <h3>Essential requirements</h3>
+        <ul>
+          <li>Basic knowledge of Windows/macOS setup and updates.</li>
+          <li>Troubleshooting mindset and attention to detail.</li>
+          <li>Comfort communicating with non-technical teammates.</li>
+        </ul>
 
-</details>
+        <h3>Preferable (nice to have)</h3>
+        <ul>
+          <li>Exposure to ticketing systems (e.g., Jira, Zendesk).</li>
+          <li>Basic networking (IP, Wi-Fi, VPN, printers).</li>
+          <li>Interest in games or creative tooling.</li>
+        </ul>
 
-<details>
-<summary>Writer: 40K - 70K</summary>
+        <p class="apply-cta">
+          <a class="btn" href="apply.html" aria-label="Apply for Junior Technician (TC0A1)">Click to apply</a>
+        </p>
+      </article>
+    </section>
+  </main>
 
-<table class="table5">
-  <tr> <!-- defines table -->
-    <th class="apply" colspan="1" scope="col"><a href="file:///Users/allie/school/webdev/GroupProject/placeholderName_Part1/apply.html">Click to apply</th></a>
-    <th class="title" colspan="5" scope="col">Writer [WR001]</th>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" colspan="1" scope="row"> Requirements </th>
-    <td>3+ years experience</td>
-    <td>Excellent writing and editing skills</td>
-    <td>Ability to research and understand complex topics</td>
-    <td>Strong attention to detail</td>
-    <td>Good communication skills</td>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" rowspan="2" scope="row"> Responsibilities </th>
-    <td>Write and edit technical articles, blog posts, and documentation</td>
-    <td>Conduct research on industry trends and best practices</td>
-    <td>Collaborate with subject matter experts to ensure accuracy</td>
-    <td>Maintain a consistent tone and style across all content</td>
-    <td>Meet deadlines and manage multiple projects simultaneously</td>
-  </tr>
-  <tr>
-    <td>Work closely with the marketing team to develop content strategies</td>
-    <td>Ensure all content is optimized for SEO</td>
-    <td>Contribute to team knowledge sharing</td>
-    <td>Stay updated with the latest industry trends and advancements</td>
-    <td>Participate in brainstorming sessions for new content ideas</td>
-  </tr>
-  <tr>
-    <th class="requiredtextbody" colspan="1" scope="row"> Benefits </th>
-    <td>Competitive salary</td>
-    <td>Flexible working hours</td>
-    <td>Opportunities for professional development</td>
-    <td>Collaborative and supportive team environment</td>
-    <td>Access to the latest tools and technologies</td>
-  </tr>
-  <tfoot>
-    <tr>
-      <th colspan="6" scope="col"> Description </th>
-    </tr>
-    <tr>
-      <td colspan="6"> We are seeking a talented and motivated part-time writer to join our content team. The
-</table>
-
-</details>
-
-</section>
+  <!-- Decorative characters/images -->
+  <div class="decorations">
+    <img src="styles/Photo/cat.png" alt="Pixel cat mascot" class="cat">
+    <img src="styles/Photo/doodle1.png" alt="Doodle decoration" class="doodle-left">
+    <img src="styles/Photo/doodle2.png" alt="Doodle decoration" class="doodle-right">
 </div>
+</section>
 
-<p>
-  Please write or provide a brief cover letter explaining why you would be a great fit for our team, along with your resume or CV.
-  <br> We look forward to reviewing your application and potentially welcoming you to our dynamic team
-</p>
-
+<!-- Footer -->
+<footer id="about-footer">
 <footer>
-  <p>&copy; BTB Studios 2025. All rights reserved.</p>
+<p>&copy; 2025 Better Than Boys Studio. All rights reserved.</p>
+<p>
+    <a href="https://github.com/ellajaeger23/Better_than_boys_WTP_part1.git" target="_blank">GitHub Repository</a> | 
+    <a href="https://ellajaeger23.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiZTkyMDY5ZTAxMGNlNGMwNWFmMmEzOGYxNzg3YTk4Y2MiLCJwIjoiaiJ9" target="_blank">Jira Board</a> | 
+    <a href="mailto:phuonguyen.brv@gmail.com">betterthanboys@gmail.com</a>
+</p>
 </footer>
 </body>
-
-<footer>
-    <p>&copy; BTB 2025. All rights reserved.</p>
-</footer>
 </html>

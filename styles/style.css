@@ -367,29 +367,41 @@ nav {
   font-size: 0.95rem;    
 }
 
-/*INTERESTS TABLE*/
-#interests-section table {
-  width: 100%;   /* table spans the section width */
-  border-collapse: collapse;    /* merges borders for a clean look */
-  margin-top: 6px;    /* space above table */
+
+/* FUN FACTS TABLE */
+#fun-facts-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
-#interests-section th,
-#interests-section td {
-  border: 1px solid #2a2330;  /* thin border between cells */
-  padding: 8px;    /*room in cells*/
-  text-align: left;   /*text aligned left */
+#fun-facts-section th,
+#fun-facts-section td {
+  border: 1px solid #2a2330;  
+  padding: 10px;
+  text-align: left;
 }
 
-#interests-section th {
-  background: #1a1620; /* darker row for headers */
-  color: #ff9ad6;   /* pink header text */
+/* Top row headers */
+#fun-facts-section thead th {
+  background: #1a1620;   
+  color: #ff9ad6;        
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
 }
+
+/* Row labels */
+#fun-facts-section tbody th {
+  background: #15121b;
+  color: #ffbde6;      
+  font-weight: bold;
+}
+
 
 /* FOOTER*/
 #about-footer {
-  text-align: center;   /* center footer text */
-  margin-top: 20px;   /* space above footer */
+  text-align: center;   
+  margin-top: 20px; 
   color: #cfc3d6;    
   font-size: 0.9rem;             
 }
@@ -403,135 +415,161 @@ nav {
     text-transform: uppercase; 
     letter-spacing: 2px;
   }
-  
-/*Apply Section*/
 
-body.apply {
-    font-family: "Courier New", monospace;
-    background: black;
-    color: white;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
+/* JOBS PAGE*/
+#jobs {
+  background: #000;
+  color: #fff;
+  font-family: "Courier New", monospace;
+  line-height: 1.5;
+  padding: 20px;
 }
 
-
-.apply-nav {
-    background-image: url("Photo/nav.png"); 
-    background-size: cover; /* image covers the whole header */
-    background-position: center; /* image centered */
-  }
-
-.apply-heading {
-  background: #e5007d;
-  color: white;
-  padding: 4rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden; /* keep star inside */
-  width: 80%;
-  margin: 2rem auto;      /* center horizontally */
-  border-radius: 8px;
+/* headings */
+#jobs h1, 
+#jobs h2 {
+  color: #ff7ac6;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+#jobs h3 {
+  color: #ffbde6;
+  margin: .5rem 0;
 }
 
-.apply-heading h1,
-.apply-heading .tagline {
-  position: relative;
-  z-index: 2; /* text always on top */
+/* sidebar intro */
+#jobs aside {
+  background: #111;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-left: 3px solid #ff7ac6;
 }
 
-.apply-heading .tagline {
-  margin-top: 1rem;
-  font-size: 1rem;
-}
-
-.apply-heading .warning {
-  color: yellow;
-  font-weight: bold;
-}
-
-.apply-heading .star {
-  position: absolute;
-  top: -30%;
-  right: 10%;
-  width: 280px;
-  z-index: 0;   /* put it behind */
-}
-
-/*Form*/
-
-form {
-  background: #231432;
-  padding: 2rem;
-  margin: 2rem auto;
-  width: 80%;
-  max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255, 20, 147, 0.8);
-}
-
-form label {
-  display: block;
-  margin-top: 1rem;
-  font-weight: bold;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="number"],
-form select,
-form textarea {
+/* tables */
+#jobs table {
   width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.3rem;
-  border: none;
-  border-radius: 5px;
-  font-family: inherit;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+#jobs th,
+#jobs td {
+  border: 1px solid #333;
+  padding: 6px;
+  text-align: left;
+}
+#jobs th {
+  background: #111;
+  color: #ff7ac6;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+/* lists */
+#jobs ul, 
+#jobs ol {
+  margin: .5rem 0 1rem 1.2rem;
+}
+#jobs li {
+  margin-bottom: .25rem;
+}
+
+/* button links */
+#jobs .btn {
   display: inline-block;
-  margin-right: 0.4rem;
+  background: #ff7ac6;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+/* APPLY PAGE */
+.apply-page {
+  background: #000;
+  color: #fff;
+  font-family: "Courier New", monospace;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+.apply-hero {
+  font-family:'Courier New', Courier, monospace;
+  text-align: center;
+  color: rgb(224, 224, 224);
+}
+
+/* form sections */
+#applicationform, 
+#resumeform {
+  background: #111016;
+  border: 1px solid #2a2330;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 800px;
+}
+#applicationform h2,
+#resumeform h3 {
+  color: #ffbde6;
+  margin-bottom: 15px;
+}
+
+/* tables inside forms */
+#applicationform table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#applicationform th,
+#applicationform td {
+  text-align: left;
+  padding: 10px;
   vertical-align: middle;
 }
-
-form label {
-  display: inline-block;   /* instead of block */
-  margin-right: 1rem;      /* spacing between options */
-  font-weight: normal;     /* lighter for inline labels */
+#applicationform th {
+  color: #ff7ac6;
+  width: 180px;
+  font-weight: 600;
 }
 
-fieldset {
-  border: 1px solid hotpink;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-radius: 5px;
+/* inputs */
+.apply-page input,
+.apply-page select,
+.apply-page textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #15121b;
+  color: #fff;
+}
+.apply-page input:focus,
+.apply-page select:focus,
+.apply-page textarea:focus {
+  border-color: #ff7ac6;
+  background: #1e1b25;
+  outline: none;
 }
 
-legend {
+/* radios and checkboxes */
+.apply-page input[type="radio"],
+.apply-page input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+/* submit buttons */
+.apply-page input[type="submit"] {
+  background: #ff7ac6;
+  color: #000;
   font-weight: bold;
-  color: hotpink;
-}
-
-/* Buttons */
-form input[type="submit"],
-form input[type="reset"] {
-  background: hotpink;
-  color: white;
   border: none;
-  padding: 0.8rem 1.5rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  border-radius: 5px;
+  padding: 10px 18px;
+  border-radius: 25px;
   cursor: pointer;
-  transition: 0.3s;
-  font-weight: bold;
+  margin-top: 12px;
 }
 
-form input[type="submit"]:hover,
-form input[type="reset"]:hover {
-  background: white;
-  color: hotpink;
-  border: 2px solid hotpink;
-}
+
+
+
+
+
