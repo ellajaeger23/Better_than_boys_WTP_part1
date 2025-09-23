@@ -582,8 +582,17 @@ nav {
   border: none;
 }
 
+#applicationform fieldset {
+  border: none;         /* remove the box */
+  margin: 0;            /* remove spacing */
+  padding: 0;
+  min-width: 0;         /* fix Firefox weirdness */
+}
 
-
-
-
+#applicationform legend {
+  font-size: 0;         /* hide text visually */
+  height: 0;
+  overflow: hidden;
+  position: absolute;   /* screen readers still announce it */
+}
 

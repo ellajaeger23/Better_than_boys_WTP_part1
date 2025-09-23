@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="Author" content="Mino, Ella">
+  <meta name="Author" content="Mino, Ella, Allison">
   <meta name="keywords" content="apply, offer, join">
   <meta name="description" content="Application data home page">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,7 @@
             <tr>
                 <th>Job reference number</th>
                 <td>
-                  <select name="jobref" id="jobref" required>
+                  <select name="jobref" id="jobref" required aria-label="Choose a job"> <!--aria-label for visually hidden label-->
                     <option value="">-- Select a job --</option>
                     <option value="WD001">WD001 – Web Developer</option>
                     <option value="TC0A1">TC0A1 – Junior Technician</option>
@@ -49,19 +49,21 @@
               </tr>
             <tr>
               <th>First Name</th>
-              <td><input type="text" name="firstname" id="firstname" maxlength="20" size="50" required pattern="[A-Za-z]{1,20}"></td>
+              <td><input type="text" name="firstname" id="firstname" maxlength="20" size="20" required pattern="[A-Za-z]{1,20}" aria-label="First Name"></td>
             </tr>
             <tr>
               <th>Last Name</th>
-              <td><input type="text" name="lastname" id="lastname" maxlength="20" size="50" required  pattern="[A-Za-z]{1,20}"></td>
+              <td><input type="text" name="lastname" id="lastname" maxlength="20" size="20" required  pattern="[A-Za-z]{1,20}" aria-label="Last Name"></td>
             </tr>
             <tr>
               <th>DOB</th>
-              <td><input type="date" name="dob" id="dob" required></td>
+              <td><input type="date" name="dob" id="dob" required aria-label="Enter Date of Birth"></td>
             </tr>
             <tr>
   <th>Gender</th>
   <td>
+     <fieldset>
+      <legend>Gender</legend>
       <label>
         <input type="radio" name="sex" value="male" required> Male
       </label>
@@ -74,20 +76,21 @@
       <label>
         <input type="radio" name="sex" value="other"> Other
       </label>
+      </fieldset>
   </td>
   </tr>
             <tr>
               <th>Street Address</th>
-              <td><input type="text" name="streetaddress" id="streetaddress" maxlength="40" size="50" required></td>
+              <td><input type="text" name="streetaddress" id="streetaddress" maxlength="40" size="40" required aria-label="Street Address"></td>
             </tr>
             <tr>
               <th>Suburb/Town</th>
-              <td><input type="text" name="town" id="town" maxlength="40" size="50" required pattern="[A-Za-z\s]{1,40}"></td>
+              <td><input type="text" name="town" id="town" maxlength="40" size="40" required pattern="[A-Za-z\s]{1,40}" aria-label="Suburb Town name"></td>
             </tr>
             <tr>
               <th>State</th>
               <td>
-                <select name="state" id="state">
+                <select name="state" id="state" aria-label="State">
                   <option value="vic">Victoria</option>
                   <option value="nsw">New South Wales</option>
                   <option value="tas">Tasmania</option>
@@ -100,19 +103,21 @@
             </tr>
             <tr>
               <th>Postcode</th>
-              <td><input type="text" name="postcode" id="postcode" maxlength="4" required pattern="\d{4}"></td>
+              <td><input type="text" name="postcode" id="postcode" maxlength="4" required pattern="\d{4}" aria-label="postcode"></td>
             </tr>
             <tr>
               <th>Email</th>
-              <td><input type="email" name="email" id="email" required></td>
+              <td><input type="email" name="email" id="email" required aria-label="email"></td>
             </tr>
             <tr>
               <th>Phone number</th>
-              <td><input type="tel" name="phone" id="phone" required pattern="\d{8,12}"></td>
+              <td><input type="tel" name="phone" id="phone" required pattern="\d{8,12}" aria-label="phone number"></td>
             </tr>
             <tr>
               <th>Skill List</th>
               <td>
+                <fieldset>
+                <legend>Skills</legend>
                 <label><input type="checkbox" name="skills" value="html"> HTML</label>
                 <label><input type="checkbox" name="skills" value="css"> CSS</label>
                 <label><input type="checkbox" name="skills" value="learning-management-systems"> Learning Management Systems (LMS)</label>
@@ -123,8 +128,9 @@
             </tr>
             <tr>
               <th>Other skills</th>
-              <td><textarea id="comments" name="comments" rows="5" cols="40"></textarea></td>
+              <td><textarea id="comments" name="comments" rows="5" cols="40" aria-label="Enter other skills"></textarea></td>
             </tr>
+            </fieldset>
           </tbody>
         </table>
 
@@ -140,7 +146,7 @@
   <div class="decorations">
     <img src="styles/Photo/cat.png" alt="Pixel cat mascot" class="cat">
     <img src="styles/Photo/doodle1.png" alt="Doodle decoration" class="doodle-left">
-    <img src="styles/Photo/doodle2.png" alt="Doodle decoration" class="doodle-right">
+    <img src="styles/Photo/doodle2.png" alt="Doodle decoration 1" class="doodle-right">
 </div>
 
   <!-- Footer -->
