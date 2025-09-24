@@ -120,7 +120,7 @@ a:hover {
 
 /* ---------- Why Work With Us Section ---------- */
 .why-work {
-    position: relative; /* keep section in normal flow AND act as reference for absolutely positioned children (decorations like .cat, .doodle-left, .doodle-right) */
+    position: relative; /* keep section in normal flow*/
     padding: 4rem 2rem;
     background: #000; 
     color: #fff;
@@ -149,7 +149,7 @@ a:hover {
         to bottom,
         #fff, 
         #fff 28px, /* White block the grey line then repeats */
-        #cfd6e0 29px
+        #cfd6e0 29px /*Repeats vertically every ~29px*/
     ); /* lined paper effect */
     border-left: 4px solid #ff5fa2;
 }
@@ -184,7 +184,7 @@ a:hover {
 }
 
 /* Fake tape effect */
-.mission::before,
+.mission::before, /*pseudo element*/
 .mission::after {
     content: "";
     position: absolute;
