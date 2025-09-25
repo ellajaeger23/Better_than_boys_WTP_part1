@@ -12,7 +12,7 @@
 
 <body id="about-page" class="apply-page">
 
-    <!--Nav Bar-->
+  <!--Nav Bar-->
   <header id="about-header">
     <nav id="about-nav">
       <img src="styles/Photo/logo.png" alt="BTB logo" class="logo">
@@ -30,123 +30,106 @@
     <p class="tagline">Join the team. Bring the sparkle 💖</p>
   </section>
   
-    <!-- Application Form -->
-    <section id="applicationform">
-      <h2>Application Form</h2>
-      <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
-        <table>
-          <tbody>
-            <tr>
-                <th>Job reference number</th>
-                <td>
-                  <select name="jobref" id="jobref" required aria-label="Choose a job"> <!--aria-label for visually hidden label-->
-                    <option value="">-- Select a job --</option>
-                    <option value="DLS002">DLS002 – Digital Learning Support Officer</option>
-                    <option value="EDT001">EDT001 – Educational Technology Developer</option>
-                  </select>
-                </td>
-              </tr>
-            <tr>
-              <th>First Name</th>
-              <td><input type="text" name="firstname" id="firstname" maxlength="20" size="20" required pattern="[A-Za-z]{1,20}" aria-label="First Name"></td>
-            </tr>
-            <tr>
-              <th>Last Name</th>
-              <td><input type="text" name="lastname" id="lastname" maxlength="20" size="20" required  pattern="[A-Za-z]{1,20}" aria-label="Last Name"></td>
-            </tr>
-            <tr>
-              <th>DOB</th>
-              <td><input type="date" name="dob" id="dob" required aria-label="Enter Date of Birth"></td>
-            </tr>
-            <tr>
-  <th>Gender</th>
-  <td>
-     <fieldset>
-      <legend>Gender</legend>
-      <label>
-        <input type="radio" name="sex" value="male" required> Male
-      </label>
-      <label>
-        <input type="radio" name="sex" value="female"> Female
-      </label>
-      <label>
-        <input type="radio" name="sex" value="non-binary"> Non-binary
-      </label>
-      <label>
-        <input type="radio" name="sex" value="other"> Other
-      </label>
-      </fieldset>
-  </td>
-  </tr>
-            <tr>
-              <th>Street Address</th>
-              <td><input type="text" name="streetaddress" id="streetaddress" maxlength="40" size="40" required aria-label="Street Address"></td>
-            </tr>
-            <tr>
-              <th>Suburb/Town</th>
-              <td><input type="text" name="town" id="town" maxlength="40" size="40" required pattern="[A-Za-z\s]{1,40}" aria-label="Suburb Town name"></td>
-            </tr>
-            <tr>
-              <th>State</th>
-              <td>
-                <select name="state" id="state" aria-label="State">
-                  <option value="vic">Victoria</option>
-                  <option value="nsw">New South Wales</option>
-                  <option value="tas">Tasmania</option>
-                  <option value="qld">Queensland</option>
-                  <option value="sa">South Australia</option>
-                  <option value="wa">Western Australia</option>
-                  <option value="nt">Northern Territories</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <th>Postcode</th>
-              <td><input type="text" name="postcode" id="postcode" maxlength="4" required pattern="\d{4}" aria-label="postcode"></td>
-            </tr>
-            <tr>
-              <th>Email</th>
-              <td><input type="email" name="email" id="email" required aria-label="email"></td>
-            </tr>
-            <tr>
-              <th>Phone number</th>
-              <td><input type="tel" name="phone" id="phone" required pattern="\d{8,12}" aria-label="phone number"></td>
-            </tr>
-            <tr>
-              <th>Skill List</th>
-              <td>
-                <fieldset>
-                <legend>Skills</legend>
-                <label><input type="checkbox" name="skills" value="html"> HTML</label>
-                <label><input type="checkbox" name="skills" value="css"> CSS</label>
-                <label><input type="checkbox" name="skills" value="learning-management-systems"> Learning Management Systems (LMS)</label>
-                <br>
-                <label><input type="checkbox" name="skills" value="Zotero"> Zotero</label>
-                <label><input type="checkbox" name="skills" value="excel">  Excel</label>
-              </td>
-            </tr>
-            <tr>
-              <th>Other skills</th>
-              <td><textarea id="comments" name="comments" rows="5" cols="40" aria-label="Enter other skills"></textarea></td>
-            </tr>
-            </fieldset>
-          </tbody>
-        </table>
+  <!-- Application Form -->
+  <section id="applicationform">
+    <h2>Application Form</h2>
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
 
-  <div class="button-container">
-  <!-- Submit -->
-    <input type="submit" value="Submit Form">
-    <input type="reset" value="Reset Form">
-  </div>
-      </form>
-    </section> 
+      <div class="form-group full-width">
+        <label for="jobref">Job reference number</label>
+        <input type="text" name="jobref" id="jobref" maxlength="5" pattern="(DL002|ED001)" title="Only DL002 or ED001 are allowed" required>
+      </div>
+
+      <div class="form-group">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" maxlength="20" required pattern="[A-Za-z]{1,20}">
+      </div>
+
+      <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" maxlength="20" required pattern="[A-Za-z]{1,20}">
+      </div>
+
+      <div class="form-group full-width">
+        <label for="dob">DOB</label>
+        <input type="date" name="dob" id="dob" required>
+      </div>
+
+      <fieldset class="form-group full-width gender">
+        <legend>Gender</legend>
+        <label><input type="radio" name="sex" value="male" required> Male</label>
+        <label><input type="radio" name="sex" value="female"> Female</label>
+        <label><input type="radio" name="sex" value="non-binary"> Non-binary</label>
+        <label><input type="radio" name="sex" value="other"> Other</label>
+      </fieldset>
+
+      <div class="form-group full-width">
+        <label for="streetaddress">Street Address</label>
+        <input type="text" name="streetaddress" id="streetaddress" maxlength="40" required>
+      </div>
+
+      <div class="form-group">
+        <label for="town">Suburb/Town</label>
+        <input type="text" name="town" id="town" maxlength="40" required pattern="[A-Za-z\s]{1,40}">
+      </div>
+
+      <div class="form-group">
+        <label for="state">State</label>
+        <select name="state" id="state">
+          <option value="">--Select a State--</option>
+          <option value="vic">Victoria</option>
+          <option value="nsw">New South Wales</option>
+          <option value="tas">Tasmania</option>
+          <option value="qld">Queensland</option>
+          <option value="sa">South Australia</option>
+          <option value="wa">Western Australia</option>
+          <option value="nt">Northern Territories</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="postcode">Postcode</label>
+        <input type="text" name="postcode" id="postcode" maxlength="4" required pattern="\d{4}">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+
+      <div class="form-group full-width">
+        <label for="phone">Phone number</label>
+        <input type="tel" name="phone" id="phone" required pattern="\d{8,12}">
+      </div>
+
+      <fieldset class="form-group full-width skills">
+        <legend>Skills</legend>
+        <label><input type="checkbox" name="skills" value="html"> HTML</label>
+        <label><input type="checkbox" name="skills" value="css"> CSS</label>
+        <label><input type="checkbox" name="skills" value="learning-management-systems"> Learning Management Systems (LMS)</label>
+        <label><input type="checkbox" name="skills" value="Zotero"> Zotero</label>
+        <label><input type="checkbox" name="skills" value="excel"> Excel</label>
+      </fieldset>
+
+      <div class="form-group full-width">
+        <label for="comments">Other skills</label>
+        <textarea id="comments" name="comments" rows="5"></textarea>
+      </div>
+
+      <div class="button-container full-width">
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+      </div>
+
+    </form>
+  </section> 
 
   <!-- Decorative characters/images -->
   <div class="decorations">
     <img src="styles/Photo/cat.png" alt="Pixel cat mascot" class="cat">
     <img src="styles/Photo/doodle1.png" alt="Doodle decoration" class="doodle-left">
     <img src="styles/Photo/doodle2.png" alt="Doodle decoration 1" class="doodle-right">
-</div>
+  </div>
 
   <!-- Footer -->
   <footer id="about-footer">

@@ -1,38 +1,44 @@
-/* General reset */
+/* =======================
+   GLOBAL RESET & BASICS
+   ======================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*Index Section*/
-body.index {
+
+body {
     font-family: "Courier New", monospace;
     background: black;
     color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    
+    line-height: 1.6;
 }
 
-/* Halftone background image */
-.top-section {
-    background-image: url("Photo/background.png");
-    background-size: cover;
-    background-position: center;
+/* Global link styling */
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-/* Navigation */
+a:hover {
+    color: #ff99cc;
+    text-decoration: underline;
+}
+
+/* =======================
+   NAVIGATION (Shared)
+   ======================= */
 nav {
-    display: flex;
-    justify-content: space-between;
+    display: flex;                   /* logo + menu on one line */
+    justify-content: space-between;  /* logo left, menu right */
     align-items: center;
     padding: 1rem 3rem;
 }
 
 nav img.logo {
     max-width: 280px;
-    height: auto; /*prevent logo from getting squished */
+    height: auto; /* prevent squishing */
 }
 
 nav .menu {
@@ -49,6 +55,32 @@ nav .menu li a {
 
 nav .menu li a:hover {
     text-decoration: underline;
+    color: #ff99cc;
+}
+
+/* =======================
+   FOOTER (Shared)
+   ======================= */
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+    color: #ccc;
+}
+
+/* =======================
+   INDEX PAGE
+   ======================= */
+body.index {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section {
+    background-image: url("Photo/background.png");
+    background-size: cover;
+    background-position: center;
 }
 
 /* Hero section */
@@ -58,7 +90,7 @@ nav .menu li a:hover {
 
 .hero h1 {
     font-size: 3rem;
-    font-family: "Press Start 2P", monospace; 
+    font-family: "Press Start 2P", monospace;
     letter-spacing: 2px;
 }
 
@@ -90,42 +122,17 @@ nav .menu li a:hover {
 
 /* Floaty animation */
 @keyframes floaty {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-15px); /* height of the bounce */
-    }
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    font-size: 0.8rem;
-    padding: 1rem;
-    color: #ccc;
-}
-
-/* Global link styling */
-a {
-    color: white;               /* white text for all links */
-    text-decoration: none;      /* remove underline */
-    transition: color 0.2s ease;
-}
-
-a:hover {
-    color: #ff99cc;             /* soft pink highlight on hover */
-    text-decoration: underline; /* retro underline effect */
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
 }
 
 /* ---------- Why Work With Us Section ---------- */
 .why-work {
-    position: relative; /* keep section in normal flow*/
+    position: relative;
     padding: 4rem 2rem;
-    background: #000; 
+    background: #000;
     color: #fff;
     text-align: center;
-    font-family: "Courier New", monospace;
 }
 
 .why-work h2 {
@@ -134,23 +141,23 @@ a:hover {
     font-family: "Georgia", serif;
 }
 
-/* Note card (lined paper effect) (Help of AI to assist with the measurement */
+/* Note card */
 .note-card {
     display: inline-block;
     background: #fff;
     color: #000;
     padding: 2rem;
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
     text-align: left;
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto 2rem;
-    background-image: repeating-linear-gradient( /* Creat repeating gradient */
+    background-image: repeating-linear-gradient(
         to bottom,
-        #fff, 
-        #fff 28px, /* White block the grey line then repeats */
-        #cfd6e0 29px /*Repeats vertically every ~29px*/
-    ); /* lined paper effect */
+        #fff,
+        #fff 28px,
+        #cfd6e0 29px
+    );
     border-left: 4px solid #ff5fa2;
 }
 
@@ -163,7 +170,6 @@ a:hover {
     margin-bottom: 0.5rem;
 }
 
-/* Fit-right-in text */
 .note-card .fit {
     margin-top: 1rem;
     font-weight: bold;
@@ -184,7 +190,7 @@ a:hover {
 }
 
 /* Fake tape effect */
-.mission::before, /*pseudo element*/
+.mission::before,
 .mission::after {
     content: "";
     position: absolute;
@@ -193,17 +199,10 @@ a:hover {
     background: #ff8ab8;
     opacity: 0.85;
     top: -10px;
-    transform: rotate(-5deg);
 }
 
-.mission::after {
-    right: 20%;
-    transform: rotate(5deg);
-}
-
-.mission::before {
-    left: 20%;
-}
+.mission::before { left: 20%; transform: rotate(-5deg); }
+.mission::after { right: 20%; transform: rotate(5deg); }
 
 /* Decorations (cat + doodles) */
 .decorations {
@@ -218,8 +217,8 @@ a:hover {
 
 .decorations .cat {
    max-width: 200px;
-    right: 2%;
-    bottom: -60px;
+   right: 2%;
+   bottom: -60px;
 }
 
 .decorations .doodle-left {
@@ -235,140 +234,95 @@ a:hover {
     max-width: 120px;
 }
 
-
-
-
-
-/*ABOUT PAGE :)*/
-
-  
-/* RESET*/
-* { margin: 0; /* remove default outer space */
-    padding: 0; /* remove default inner space */
- }
-
-
-/* PAGE BASICS*/
+/* =======================
+   ABOUT PAGE
+   ======================= */
 #about-page { 
-  background: #000000;  /* black background */
-  color: #ffffff; /* white text */
-  line-height: 1.6; /* a little extra line spacing */
-  padding: 20px; /* space around the whole page */
+  background: #000;
+  color: #fff;
+  padding: 20px;
   font-family: "Courier New", monospace;
 }
 
 #about-header {
     background-image: url("Photo/nav.png"); 
-    background-size: cover; /* image covers the whole header */
-    background-position: center; /* image centered */
-  }
-  
-
-/*NAV BAR */
-nav {
-    display: flex; /*put logo and nav on one line */
-    justify-content: space-between; /* space between logo and menu */
-    align-items: center;   /* center both */
-    padding: 1rem 3rem;  /* same spacing as index pagae */
-  }
-  
-  nav img.logo {
-    max-width: 280px; /* logo size same as index page */
-    height: auto;  /* prevent squishing */
-  }
-  
-  nav .menu {
-    list-style: none;   /* remove bullets */
-    display: flex;  /* nav in a row */
-    gap: 2rem; /* spacing between links */
-  }
-  
-  nav .menu li a {
-    color: white;  /* white links */
-    text-decoration: none; /* no underline on links*/
-    font-size: 1.2rem;   /* matches index font sizing */
-  }
-  
-  nav .menu li a:hover {
-    text-decoration: underline;  /* underlines on hover */
-  }
-
-
-/* MAIN */
-#about-main { 
-  max-width: 900px; /* limit line length  */
-  margin: 0 auto;  /* center the main content */
+    background-size: cover;
+    background-position: center;
 }
 
-/* SECTION CARDS*/
+#about-main { 
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Section cards */
 #about-main section {
-  background: #111016;       
-  border: 1px solid #2a2330; /* adds border */
-  border-radius: 12px;  /* round corners */
-  padding: 16px;    /* space inside the card */
-  margin: 16px 0;   /* space between cards */
-  transition: box-shadow 0.3s, border-color 0.3s; /* hover glow */
+  background: #111016;
+  border: 1px solid #2a2330;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0;
+  transition: box-shadow 0.3s, border-color 0.3s;
 }
 
 #about-main section:hover {
-  box-shadow: 0 0 18px #ff7ac6;  /* pink glow when hovering */
-  border-color: #ff7ac6;  /* border becomes pink on hover */
+  box-shadow: 0 0 18px #ff7ac6;
+  border-color: #ff7ac6;
 }
 
-/* SECTION TITLES */
+/* Titles */
 #about-main h2 {
-  color: #ff7ac6;    /* pink heading color */
-  font-size: clamp(1rem, 2.6vw, 1.4rem); /* responsive size for all screens */
-  margin-bottom: 10px;   /* space under the title */
+  color: #ff7ac6;
+  font-size: clamp(1rem, 2.6vw, 1.4rem);
+  margin-bottom: 10px;
 }
 
-/* PARAGRAPHS */
+/* Paragraphs */
 #about-main p {
-  margin: 8px 0; /* spacing around paragraphs */
+  margin: 8px 0;
 }
 
-/* ABOUT LISTS */
+/* Lists */
 #about-section ul {
-  margin: 8px 0;  /* space above/below the list */
-  padding-left: 18px;   /* indent bullets */
+  margin: 8px 0;
+  padding-left: 18px;
 }
 
 #about-section ul ul {
-  margin-top: 6px;    /* a bit of space before nested list */
-  padding-left: 16px;   /* indent bullets more */
+  margin-top: 6px;
+  padding-left: 16px;
 }
 
-/* CONTRIBUTIONS*/
+/* Contributions */
 #contributions-section dt {
-  color: #ff9ad6;  /* make names pink */
-  font-weight: bold;  /* bold the names */
+  color: #ff9ad6;
+  font-weight: bold;
 }
 
 #contributions-section dd {
-  margin-left: 18px;   /* indent the roles under names */
-  margin-bottom: 6px;  /* space after each role */
+  margin-left: 18px;
+  margin-bottom: 6px;
 }
 
-/*GROUP PHOTO */
+/* Group photo */
 #group-photo-section figure {
-  text-align: center;   /* center image and caption */
+  text-align: center;
 }
 
 #group-photo-section img {
-  max-width: 100%;   /* keep image inside the container */
-  height: auto;     /* keep proportions */
-  border-radius: 10px;    /* soft corners */
-  border: 2px solid #2a2330;  /* thin frame around image */
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #2a2330;
 }
 
 #group-photo-section figcaption {
-  color: #ffbde6;    /* pink caption */
-  margin-top: 6px;     /* space above the caption text */
-  font-size: 0.95rem;    
+  color: #ffbde6;
+  margin-top: 6px;
+  font-size: 0.95rem;
 }
 
-
-/* FUN FACTS TABLE */
+/* Fun facts table */
 #fun-facts-section table {
   width: 100%;
   border-collapse: collapse;
@@ -377,46 +331,36 @@ nav {
 
 #fun-facts-section th,
 #fun-facts-section td {
-  border: 1px solid #2a2330;  
+  border: 1px solid #2a2330;
   padding: 10px;
   text-align: left;
 }
 
-/* Top row headers */
 #fun-facts-section thead th {
-  background: #1a1620;   
-  color: #ff9ad6;        
+  background: #1a1620;
+  color: #ff9ad6;
   font-family: "Orbitron", sans-serif;
   text-transform: uppercase;
 }
 
-/* Row labels */
 #fun-facts-section tbody th {
   background: #15121b;
-  color: #ffbde6;      
+  color: #ffbde6;
   font-weight: bold;
 }
 
-
-/* FOOTER*/
-#about-footer {
-  text-align: center;   
-  margin-top: 20px; 
-  color: #cfc3d6;    
-  font-size: 0.9rem;             
-}
-
-/*title fonts*/
-
+/* Titles fonts */
 #about-page h1,
 #about-page h2,
 #about-page h3 {
     font-family: "Orbitron", sans-serif;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     letter-spacing: 2px;
-  }
+}
 
-/* JOBS PAGE*/
+/* =======================
+   JOBS PAGE
+   ======================= */
 #jobs {
   background: #000;
   color: #fff;
@@ -425,19 +369,19 @@ nav {
   padding: 20px;
 }
 
-/* headings */
 #jobs h1, 
 #jobs h2 {
   color: #ff7ac6;
   text-transform: uppercase;
   margin: 1rem 0;
 }
+
 #jobs h3 {
   color: #ffbde6;
   margin: .5rem 0;
 }
 
-/* sidebar intro */
+/* Sidebar */
 #jobs aside {
   background: #111;
   padding: 12px;
@@ -445,33 +389,36 @@ nav {
   border-left: 3px solid #ff7ac6;
 }
 
-/* tables */
+/* Tables */
 #jobs table {
   width: 100%;
   border-collapse: collapse;
   margin: 1rem 0;
 }
+
 #jobs th,
 #jobs td {
   border: 1px solid #333;
   padding: 6px;
   text-align: left;
 }
+
 #jobs th {
   background: #111;
   color: #ff7ac6;
 }
 
-/* lists */
+/* Lists */
 #jobs ul, 
 #jobs ol {
   margin: .5rem 0 1rem 1.2rem;
 }
+
 #jobs li {
   margin-bottom: .25rem;
 }
 
-/* button links */
+/* Buttons */
 #jobs .btn {
   display: inline-block;
   background: #ff7ac6;
@@ -481,23 +428,21 @@ nav {
   font-weight: bold;
 }
 
-/* APPLY PAGE */
+/* =======================
+   APPLY PAGE
+   ======================= */
 .apply-page {
   background: #000;
   color: #fff;
   font-family: "Courier New", monospace;
   line-height: 1.6;
-  padding: 0;
-  margin: 0;
 }
 
 .apply-hero {
-  font-family:'Courier New', Courier, monospace;
   text-align: center;
   color: rgb(224, 224, 224);
 }
 
-/* form sections */
 #applicationform {
   background: #111016;
   border: 1px solid #2a2330;
@@ -505,38 +450,49 @@ nav {
   padding: 25px;
   margin: 30px auto;
   max-width: 800px;
-  
 }
-#applicationform h2,
 
-/* tables inside forms */
-#applicationform table {
-  width: 100%;
-  border-collapse: collapse;
-}
-#applicationform th,
-#applicationform td {
-  text-align: left;
-  padding: 10px;
-  vertical-align: middle;
-}
-#applicationform th {
+#applicationform h2 {
+  text-align: center;
   color: #ff7ac6;
-  width: 180px;
-  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-/* inputs */
+#applicationform form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+/* Labels */
+.form-group label,
+#applicationform legend {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #ff7ac6;
+}
+
+/* Inputs */
 .apply-page input,
 .apply-page select,
 .apply-page textarea {
-  width: 100%;
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #333;
   border-radius: 6px;
   background: #15121b;
   color: #fff;
+  font-size: 1rem;
 }
+
 .apply-page input:focus,
 .apply-page select:focus,
 .apply-page textarea:focus {
@@ -545,54 +501,71 @@ nav {
   outline: none;
 }
 
-/* radios and checkboxes */
+/* Radios & checkboxes */
 .apply-page input[type="radio"],
 .apply-page input[type="checkbox"] {
   width: auto;
   margin-right: 6px;
 }
 
-/* submit and reset buttons */
+#applicationform fieldset {
+  border: 2px solid #ff7ac6;
+  background: rgba(255, 122, 198, 0.1);
+  border-radius: 6px;
+  padding: 12px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+#applicationform fieldset label {
+  color: #fff;
+  font-weight: normal;
+}
+
+/* Buttons */
 .button-container {
-  text-align: center; /* centers inline elements */
-  margin-top: 20px; 
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  grid-column: span 2;
+  margin-top: 10px;
 }
 
 .apply-page input[type="submit"],
 .apply-page input[type="reset"] {
-  border-radius: 4px;          /* rectangle corners */
-  display: inline-block;       /* allow buttons next to each other */
-  width: auto;                 /* fit content */
-  margin: 0 5px;               /* spacing between buttons */
-  padding: 10px 20px;          /* bigger clickable area */
+  border-radius: 4px;
+  padding: 10px 20px;
   font-weight: bold;
   cursor: pointer;
-  
+  border: none;
 }
 
 .apply-page input[type="submit"] {
   background: #ff7ac6;
   color: #000;
-  border: none;
+}
+
+.apply-page input[type="submit"]:hover {
+  background: #e05599;
 }
 
 .apply-page input[type="reset"] {
   background: #555;
   color: #fff;
-  border: none;
 }
 
-#applicationform fieldset {
-  border: none;         /* remove the box */
-  margin: 0;            /* remove spacing */
-  padding: 0;
-  min-width: 0;         /* fix Firefox weirdness */
+.apply-page input[type="reset"]:hover {
+  background: #777;
 }
 
-#applicationform legend {
-  font-size: 0;         /* hide text visually */
-  height: 0;
-  overflow: hidden;
-  position: absolute;   /* screen readers still announce it */
+/* Responsive */
+@media (max-width: 700px) {
+  #applicationform form {
+    grid-template-columns: 1fr;
+  }
+  .full-width,
+  .button-container {
+    grid-column: span 1;
+  }
 }
-
