@@ -41,6 +41,10 @@ nav {
     width: 100%;                 /* stretch full width */
 }
 
+#index-nav {
+    background: none;
+}
+
 nav img.logo {
     max-width: 280px;
     height: auto; /* prevent squishing */
