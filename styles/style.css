@@ -34,6 +34,11 @@ nav {
     justify-content: space-between;  /* logo left, menu right */
     align-items: center;
     padding: 1rem 3rem;
+    background-image: url("Photo/nav.png"); 
+    background-size: cover;      /* scale to fill */
+    background-position: center; /* keep centered */
+    background-repeat: no-repeat; /* don’t tile */
+    width: 100%;                 /* stretch full width */
 }
 
 nav img.logo {
@@ -57,6 +62,8 @@ nav .menu li a:hover {
     text-decoration: underline;
     color: #ff99cc;
 }
+
+
 
 /* =======================
    FOOTER (Shared)
@@ -234,6 +241,7 @@ body.index {
     max-width: 120px;
 }
 
+
 /* =======================
    ABOUT PAGE
    ======================= */
@@ -244,11 +252,6 @@ body.index {
   font-family: "Courier New", monospace;
 }
 
-#about-header {
-    background-image: url("Photo/nav.png"); 
-    background-size: cover;
-    background-position: center;
-}
 
 #about-main { 
   max-width: 900px;
@@ -353,10 +356,11 @@ body.index {
 #about-page h1,
 #about-page h2,
 #about-page h3 {
-    font-family: "Orbitron", sans-serif;
+    font-family: "Courier New", monospace;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 
 /* =======================
    JOBS PAGE
@@ -381,13 +385,6 @@ body.index {
   margin: .5rem 0;
 }
 
-/* Sidebar */
-#jobs aside {
-  background: #111;
-  padding: 12px;
-  margin-bottom: 20px;
-  border-left: 3px solid #ff7ac6;
-}
 
 /* Tables */
 #jobs table {
@@ -427,6 +424,18 @@ body.index {
   border-radius: 15px;
   font-weight: bold;
 }
+
+/* Jobs page requirements*/
+#jobs aside {
+  width: 25%;              /* takes up a quarter of the page */
+  float: right;            /* floats to the right side */
+  border: 2px solid #ff7ac6; /* visible border (pink to match theme) */
+  margin: 15px;            /* space around the box */
+  padding: 15px;           /* space inside the box */
+  background: #111016;     /* dark background to match design */
+  border-radius: 8px;      /* soften corners */
+}
+
 
 /* =======================
    APPLY PAGE
